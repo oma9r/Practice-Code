@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\DSA\\geeksforgeeks\\linkedlist\\easy\\1- middle of linkedlist\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D71D77-15D6-4DDD-9E65-757CA24EC8FA}|1- middle of linkedlist.vcxproj|C:\\Users\\user\\OneDrive\\Desktop\\DSA\\geeksforgeeks\\linkedlist\\easy\\1- middle of linkedlist\\1- middle of linkedlist.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D3D71D77-15D6-4DDD-9E65-757CA24EC8FA}|1- middle of linkedlist.vcxproj|solutionrelative:1- middle of linkedlist.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 414,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "1- middle of linkedlist.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\DSA\\geeksforgeeks\\linkedlist\\easy\\1- middle of linkedlist\\1- middle of linkedlist.cpp",
+              "RelativeDocumentMoniker": "1- middle of linkedlist.cpp",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\DSA\\geeksforgeeks\\linkedlist\\easy\\1- middle of linkedlist\\1- middle of linkedlist.cpp",
+              "RelativeToolTip": "1- middle of linkedlist.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-08T11:41:04.99Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

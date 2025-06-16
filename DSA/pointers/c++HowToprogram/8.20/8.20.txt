@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+
+void selectionSort(int[],const int,bool(*)(int,int) );
+void swap(int *const,int *const);
+bool ascending (int,int);
+bool descending (int,int);
+
+ int main()
+  {
+        const int arraySize = 10;
+        int order;
+        int counter;
+        int a[arraySize] = {2,6,4,8,10,12,89,68,45,37};
+
+        cout << "Enter 1 to sort in ascending order,\n" << "Enter 2 to sort

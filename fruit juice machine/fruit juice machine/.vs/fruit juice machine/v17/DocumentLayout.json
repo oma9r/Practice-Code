@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\practice\\fruit juice machine\\fruit juice machine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{112D5A3A-B9E9-4410-87DE-DB6528D2E26A}|fruit juice machine.vcxproj|C:\\Users\\user\\OneDrive\\Desktop\\practice\\fruit juice machine\\fruit juice machine\\fruit juice machine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{112D5A3A-B9E9-4410-87DE-DB6528D2E26A}|fruit juice machine.vcxproj|solutionrelative:fruit juice machine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 364,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "fruit juice machine.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\practice\\fruit juice machine\\fruit juice machine\\fruit juice machine.cpp",
+              "RelativeDocumentMoniker": "fruit juice machine.cpp",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\practice\\fruit juice machine\\fruit juice machine\\fruit juice machine.cpp",
+              "RelativeToolTip": "fruit juice machine.cpp",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-03T05:11:37.818Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
