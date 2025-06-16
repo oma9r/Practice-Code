@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+class MaximumFinder 
+{
+   public static void main( String [] args)  
+   {
+     double value1 = 0;
+     double value2 = 0;
+     double value3 = 0;
+     
+
+      
+
+
+
+
+    }//end of main
+
+ public static double Max( double numV1, double numV2, double numV3) 
+  {
+       double temp = numV1;
+       
+       if( numV2 < temp) { temp = numV2;}
+       else if (numV3 < temp) { temp = numV3;} 
+     return temp;
+  }//end of Max
+
+
+
+}//end of class
+
