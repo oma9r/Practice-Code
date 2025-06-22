@@ -7,15 +7,21 @@ bool arrayListType<elemType>::isEmpty() const
 	return (length == 0);
 }
 
+template <class elemType>
+
 bool arrayListType<elemType>::isFull() const
 {
 	return (length == maxSize);
 }
 
+template <class elemType>
+
 int arrayListType<elemType>::maxListSize() const
 {
 	return maxSize;
 }
+
+template <class elemType>
 
 void arrayListType<elemType>::print() const
 {
@@ -25,10 +31,14 @@ void arrayListType<elemType>::print() const
 	cout << endl;
 }
 
+template <class elemType>
+
 bool arrayListType<elemType>::isItemAtEqual(int location, const elemType& item) const
 {
 	return (List[location] == item);
 }
+
+template <class elemType>
 
 void arrayListType<elemType>::insertAt(int location, const elemType& insertItem)
 {
@@ -48,6 +58,7 @@ void arrayListType<elemType>::insertAt(int location, const elemType& insertItem)
 		}
 }// end function insertAt
 
+template <class elemType>
 
 void arrayListType<elemType>::insertEnd(const elemType& insertItem)
 {
@@ -59,6 +70,8 @@ void arrayListType<elemType>::insertEnd(const elemType& insertItem)
 		length++;
 	}
 }
+
+template <class elemType>
 
 void arrayListType<elemType>::removeAt(int location)
 {
@@ -73,6 +86,8 @@ void arrayListType<elemType>::removeAt(int location)
 	}
 }// end removeAt function
 
+template <class elemType>
+
 void retrieveAt(int location,elemType& retItem) const
 {
 	if(location < 0 || location >= length)
@@ -80,6 +95,8 @@ void retrieveAt(int location,elemType& retItem) const
 	else
 		retItem = list[location];
 }
+
+template <class elemType>
 
 void arrayListType<elemType>::replaceAt(int location,const elemType& repItem)
 {
@@ -89,10 +106,14 @@ void arrayListType<elemType>::replaceAt(int location,const elemType& repItem)
 		list[location] = repItem;
 }
 
+template <class elemType>
+
 void arrayListType<elemType>::clearList()
 {
 	length = 0;
 }
+
+template <class elemType>
 
 arrayListType<elemType>::arrayListType(int size)
 {
@@ -112,10 +133,120 @@ arrayListType<elemType>::arrayListType(int size)
 	assert(list != NULL);
 }
 
+template <class elemType>
+
 arrayListType<elemType>::~arrayListType()
 {
 	delete [] list;
 }
+
+template <class elemType>
 	
 
+arrayListType<elemType>::arrayListType(const arrayListType<elemType>& otherList)
+{
+	maxSize = otherList.maxSize;
+	length = otherList.length;
+	list = new elemType[maxSize];
+	assert(list != NULL);
+
+	for(int j = 0; j < length; ++j)
+	
+		list[j] = otherList.list[j];
+}
+
+template <class elemType>
+
+const arrayListType<elemType>& arrayListType<elemType>::operator=(const arrayListType<elemType>& otherList)
+{
+	if(this != &otherList)
+	{
+		delete [] list;
+		maxSize = otherList.maxSize;
+		length = otherList.length;
+
+		list = new elemType[maxSize];
+		assert(list != NULL);
+
+		for(int i=0; i < length; ++i)
+	
+			list[i] = otherList.list[i];
+		
+	}
+
+	return *this;
+}
+
+template <class elemType>
+
+int arrayListType<elemType>::seqSearch(const elemType& item) const
+{
+	int loc;
+	bool found = false;
+
+	for(loc = 0; loc < length; loc++)
+	
+		if(list[loc] == item)
+		{
+			found = true;
+			break;
+		}
+
+
+	if(found)
+		return loc;
+	else
+		return -1;
+}
+
+template <class elemType>
+
+
+void arrayListType<elemType>::insert(const elemType& insertItem)
+{
+	int loc;
+
+	if(length == 0)
+			list[length++] = insertItem;
+
+	else if(length == maxSize)
+					cerr << "Cannot insert in a full list." << endl;
+
+	else
+	{
+
+		if(seqSearch(insertItem))
+						list[length++];
+		else
+			cerr << "the item to be inserted is already in the list. No duplicates are allowed." << endl;
+	}
+}
+
+template <class elemType>
+
+void arrayListType<elemType>::remove(const elemType& removeItem)
+{
+	int loc;
+
+	if(length == 0)
+			cerr << "Cannot delete from an empty list." << endl;
+
+	else
+	{
+		loc = seqSearch(removeItem);
+
+		if( loc != -1)
+				removeAt(loc);
+		else
+			cout << "The item ti be deleted is not the list." << endl;
+	}
+}
+
+
+			
+		
+
+
+
+		
 
