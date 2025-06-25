@@ -1,25 +1,9 @@
-package sample.guitarrickstore;
+package mainClass;
 
+import sample.guitarrickstore.Inventory;
 
-public class FindGuitarTester
+public class initializeInventoryClass
 {
-    public static void main(String [] args )
-    {
-
-
-
-        Inventory inventory = new Inventory();
-
-        initializeInventory(inventory);
-
-        Guitar whatErinLikes = new Guitar("",0,"Fender","Stratocaster","electric","Alder","Alder");
-
-        Guitar guitar = inventory.search(whatErinLikes);
-
-        checker(guitar);
-
-    };
-
     public static void initializeInventory(Inventory inventory)
     {
         inventory.addGuitar("SN123456", 1299.99, "Fender", "Stratocaster", "Electric", "Alder", "Maple");
@@ -36,29 +20,4 @@ public class FindGuitarTester
 
 
     }
-
-
-
-
-
-    public static void checker(Guitar checkGuitar)
-    {
-
-
-        if(checkGuitar != null)
-        {
-            System.out.println("Erin, you might like this: " + checkGuitar.getBuilder() + " "
-                    + checkGuitar.getModel() + " "
-                    + checkGuitar.getType() + " guitar:\n     "
-                    + checkGuitar.getBackWood() + " back and sides,\n     "
-                    + checkGuitar.getTopWood() + " top.\nYou can have it for only $"
-                    + checkGuitar.getPrice() + "!"
-            );
-        }
-        else
-        {
-            System.out.println("Sorry, Erin, we have nothing for you.");
-        }
-
-    };
 }
