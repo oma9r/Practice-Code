@@ -1,6 +1,7 @@
 package mainClass;
 
 import sample.guitarrickstore.Guitar;
+import sample.guitarrickstore.GuitarSpec;
 
 import java.util.Iterator;
 import java.util.List;
@@ -18,11 +19,13 @@ public class checkerClass
             {
                 Guitar guitar = (Guitar)i.next();
 
-                System.out.println("  We have a  " + guitar.getBuilder() + " "
-                        + guitar.getModel() + " "
-                        + guitar.getType() + " guitar:\n     "
-                        + guitar.getBackWood() + " back and sides,\n     "
-                        + guitar.getTopWood() + " top.\nYou can have it for only $"
+                GuitarSpec spec = guitar.getSpec();
+
+                System.out.println("  We have a  " + spec.getBuilder() + " "
+                        + spec.getModel() + " "
+                        + spec.getType() + " guitar:\n     "
+                        + spec.getBackWood() + " back and sides,\n     "
+                        + spec.getTopWood() + " top.\nYou can have it for only $"
                         + guitar.getPrice() + "!\n  ----"
                 );
             }
