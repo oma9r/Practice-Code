@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.82" multi-file="no" uid="simp0f76304dd8924742b0edf6c9b3b4e18c" creation-date="07/26/2025 21:41:59">
+  <meta>
+    <name>GameClassDiagram</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>11</value>
+      </counter>
+      <counter>
+        <item-type type-id="enumeration" type="Enumeration" />
+        <value>2</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>12</value>
+      </counter>
+      <counter>
+        <item-type type-id="text" type="Text" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>28</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="Universal Connector" />
+        <value>19</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>9</value>
+      </counter>
+      <counter>
+        <item-type type-id="enumeration" type="Enumeration" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="Generalization" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment" type="Comment" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="Comment Connector" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="dependency" type="Dependency" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>33</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.EnumerationItemField</type>
+        <value>5</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-823beae0a2d44b2885d4139fe8ff31f5" name="" task-id-sequence="0">
+    <working-schedule uid="ws-66ca62a171a249df835a57d7d326d065" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-480c35ed9a14412d9f5f184257f39f8e" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-612772ce251a4416918c68682d7aab10" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="void" name="void" />
+        <type id="EmptyPlace [10][10]" name="EmptyPlace [10][10]" />
+        <type id="Class:72b0e079f0f948868b512e875268436a" name="RewardType" class-ref="72b0e079f0f948868b512e875268436a" />
+        <type id="Class:7014d4b4793d4e279221550e9319bca0" name="Reward" class-ref="7014d4b4793d4e279221550e9319bca0" />
+        <type id="Class:556f3e63e1b149b5ac2446cee34236fa" name="Input" class-ref="556f3e63e1b149b5ac2446cee34236fa" />
+        <type id="Snake *" name="Snake *" />
+        <type id="Class:23ea506e2cd246559610a51659600ec0" name="Object &lt;&lt;abstract&gt;&gt;" class-ref="23ea506e2cd246559610a51659600ec0" />
+        <type id="Class:658852cc53894e459e6392a27645b73f" name="Controller" class-ref="658852cc53894e459e6392a27645b73f" />
+        <type id="Class:f089dc9030224615a2a114b94fef5bd4" name="BuildBoard" class-ref="f089dc9030224615a2a114b94fef5bd4" />
+        <type id="int[10][10]" name="int[10][10]" />
+      </types>
+    </custom-types>
+  </types>
+  <items>
+    <item id="a962e94b982c477a89b9c18e47bc954e" cid="PROP005" type="property" name="Xposition: int" owner="23ea506e2cd246559610a51659600ec0" creator="" creation-date="07/26/2025 21:46:03" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+    </item>
+    <item id="76dbdd09a2bc4f7e9041c78e19f57c71" cid="PROP017" type="property" name="head" owner="926d82fa5df04a6ba43f7dbec0df338d" creator="" creation-date="07/26/2025 22:37:50" visibility="protected">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="Snake *" type-id="Snake *" />
+    </item>
+    <item id="9ee04c7ed2044866b252e818a3eb440c" cid="PROP012" type="property" name="RewardValue" owner="7014d4b4793d4e279221550e9319bca0" creator="" creation-date="07/26/2025 22:05:51" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="Integer" type-id="Uml.Integer" />
+    </item>
+    <item id="28af8638753442b68556bfaa1ef4f8e6" cid="PROP018" type="property" name="next" owner="7fbb8b08b6bd401bbab0876b7d467f66" creator="" creation-date="07/26/2025 22:43:13" visibility="public">
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="Snake *" type-id="Snake *" />
+      <property />
+    </item>
+    <item id="ac01b979e2d244ab9bdd7dfc7d279278" cid="CMT001" type="comment" name="Comment" creation-date="08/09/2025 12:40:59">
+      <comment />
+    </item>
+    <item id="9dd119a0ba9c4cf6a2de727f4f82b6a7" cid="PROP001" type="property" name="_board" owner="f089dc9030224615a2a114b94fef5bd4" creator="" creation-date="07/26/2025 21:43:50" visibility="private">
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="EmptyPlace [10][10]" type-id="EmptyPlace [10][10]" />
+      <property />
+    </item>
+    <item id="47ff7629b3bf4212ac05a6a044e99d56" cid="PROP016" type="property" name="Type" owner="7014d4b4793d4e279221550e9319bca0" creator="" creation-date="07/26/2025 22:32:17" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="RewardType" type-id="Class:72b0e079f0f948868b512e875268436a" />
+    </item>
+    <item id="6e6e582cd7084e649c44a1d8d75a98d5" cid="PROP014" type="property" owner="9ef8989947b44a32a213985813ce93e8" creator="" creation-date="07/26/2025 22:14:18" visibility="private" />
+    <item id="a78c2f7d548046be98749215580e5131" cid="REL005" type="relationship" name="1 ... 1" creation-date="08/09/2025 12:40:29" visibility="package">
+      <relation from="" to="" derived="false">
+        <start-role id="umlar-bb62f0a0-f067-4d65-8d99-7592d4aff5cc" name="" navigability="" association-type="composition" visibility="private" />
+        <end-role id="umlar-aec5d4aa-afd3-474c-904d-dd6e295702b0" name="" navigability="" association-type="association" visibility="private" />
+      </relation>
+    </item>
+    <item id="8413f10a373e488389772cbd6dd2f43f" cid="PROP004" type="property" owner="b8e6960bc04045a68ccc48461f983f58" creator="" creation-date="07/26/2025 21:45:21" visibility="private">
+      <structural-feature type="Object &lt;&lt;abstract&gt;&gt;" type-id="Class:23ea506e2cd246559610a51659600ec0" />
+    </item>
+    <item id="ca8d13f47f584e5e85a9684ea10d03e5" cid="PROP027" type="property" name="LastSnake" owner="658852cc53894e459e6392a27645b73f" creation-date="08/09/2025 13:51:38" visibility="public">
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="Snake *" type-id="Snake *" />
+    </item>
+    <item id="1d14eb097f0f45d19d26136bb75d92f3" cid="PROP023" type="property" owner="7bb7cca2ae014284850ae16feb0dc90d" creation-date="08/09/2025 13:38:06" visibility="private">
+      <property aggregation="composite" />
+    </item>
+    <item id="088e1086551f4147921d88904b870ca0" cid="PROP006" type="property" name="Yposition: int" owner="23ea506e2cd246559610a51659600ec0" creator="" creation-date="07/26/2025 21:46:09" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+    </item>
+    <item id="2f4d6207a7db4840bbfe31d1a437c6c0" cid="C004" type="class" name="SnakePart" creation-date="07/26/2025 21:55:19" visibility="undefined" is-abstract="true">
+      <operations>
+        <operation id="d52d6c6bdf264665a445c399e4de64fd" cid="OP005" veid="o037fd63b149d43288a8c68a175136731808" name="getXposition" creation-date="07/26/2025 22:23:44" type="Integer" type-id="Uml.Integer" visibility="public">
+          <source-codes>
+            <source-code language="ActionScript" />
+          </source-codes>
+        </operation>
+        <operation id="3e07916e121d4a3a88ba0885257e036b" cid="OP006" veid="oece140d9b5d648b3bfc07c532a1e6c1c912" name="getYposition" creation-date="07/26/2025 22:24:11" type="Integer" type-id="Uml.Integer" visibility="public">
+          <source-codes>
+            <source-code language="ActionScript" />
+          </source-codes>
+        </operation>
+        <operation id="d2d6e49615264e9ebb95d54ad112eb86" cid="OP007" veid="ocbbf3fe515824cb595afbb9dfa889214960" name="setXposition" creation-date="07/26/2025 22:24:22" type="" type-id="" visibility="public">
+          <parameters>
+            <parameter id="p2c6544ece02d46a7b071fbf11aa6b111" name="x" type="Integer" type-id="Uml.Integer" creation-date="07/26/2025 22:24:32" />
+          </parameters>
+          <source-codes>
+            <source-code language="ActionScript" />
+          </source-codes>
+        </operation>
+        <operation id="74e79c132d6a44e5b5c66367f67eaf6d" cid="OP008" veid="o4f2bb2f02a4f4d4d94fd9bdb4092fb41376" name="setYposition" creation-date="07/26/2025 22:25:18" type="" type-id="" visibility="public">
+          <parameters>
+            <parameter id="p7506d30676c149d1bc52ad76783fa1b7" name="y" type="Integer" type-id="Uml.Integer" creation-date="07/26/2025 22:25:34" />
+          </parameters>
+          <source-codes>
+            <source-code language="ActionScript" />
+          </source-codes>
+        </operation>
+      </operations>
+      <source-codes>
+        <source-code language="ActionScript" />
+      </source-codes>
+    </item>
+    <item id="3d75436df74a4844b5627b0748a19d01" cid="PROP002" type="property" name="objects" owner="f089dc9030224615a2a114b94fef5bd4" creator="" creation-date="07/26/2025 21:44:11" visibility="private">
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature multiplicity="int" type="Object" type-id="Uml.Object" />
+    </item>
+    <item id="414e317d8caa42169f4d1eb406d5f373" cid="PROP013" type="property" owner="9ef8989947b44a32a213985813ce93e8" creator="" creation-date="07/26/2025 22:14:18" visibility="private">
+      <structural-feature type="Reward" type-id="Class:7014d4b4793d4e279221550e9319bca0" />
+    </item>
+    <item id="95b948c6993246919ef64d268a330da8" cid="PROP024" type="property" owner="7bb7cca2ae014284850ae16feb0dc90d" creation-date="08/09/2025 13:38:06" visibility="private">
+      <structural-feature type="Input" type-id="Class:556f3e63e1b149b5ac2446cee34236fa" />
+    </item>
+    <item id="f5b12857435d4568893269cf62072540" cid="PROP025" type="property" name="input" owner="658852cc53894e459e6392a27645b73f" creation-date="08/09/2025 13:38:39" visibility="public">
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="Input" type-id="Class:556f3e63e1b149b5ac2446cee34236fa" />
+    </item>
+    <item id="b61ce4221b714a779bb5b3ced79e1550" cid="PROP003" type="property" owner="b8e6960bc04045a68ccc48461f983f58" creator="" creation-date="07/26/2025 21:45:21" visibility="private">
+      <structural-feature type="BuildBoard" type-id="Class:f089dc9030224615a2a114b94fef5bd4" />
+      <property aggregation="composite" />
+    </item>
+  </items>
+  <models>
+    <model id="pa7b2ff878b764b809f50842294345457_533404461" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>07/26/2025 21:42:00</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p68076c7c8cd347ac9a651419092d029a_651000056" name="Class Diagram - Snake Game" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="0,-315" zoom="0.8">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>07/26/2025 21:42:00</creation-date>
+          <change-date>08/09/2025 17:00:50</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="d40a9cf87b524425a565ba31035c0a23" cid="DEP001" type="dependency" creation-date="08/09/2025 14:09:19" from="658852cc53894e459e6392a27645b73f" to="dc15a2d15f69402d9b9c37bf7364a658" visibility="package">
+            <stereotypes>
+              <stereotype name="use" />
+            </stereotypes>
+            <stereotype-instances>
+              <stereotype id="d40a9cf87b524425a565ba31035c0a23_use_c" type="use" creation-date="08/09/2025 14:09:19" ref="" />
+            </stereotype-instances>
+          </item>
+          <item id="7fbb8b08b6bd401bbab0876b7d467f66" cid="C004" type="class" name="Snake &lt;&lt;abstract&gt;&gt;" creator="" creation-date="07/26/2025 21:55:19" visibility="undefined" is-abstract="true">
+            <owned-items />
+            <attributes>
+              <attribute id="a687b865bf3114f6bab741bf5d502d0d6328" cid="PROP018" name="next" creation-date="07/26/2025 22:43:13" property-ref="28af8638753442b68556bfaa1ef4f8e6" />
+            </attributes>
+            <operations>
+              <operation id="o037fd63b149d43288a8c68a175136731808" cid="OP005" name="getXposition" creation-date="07/26/2025 22:23:44" type="Integer" type-id="Uml.Integer" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oece140d9b5d648b3bfc07c532a1e6c1c912" cid="OP006" name="getYposition" creation-date="07/26/2025 22:24:11" type="Integer" type-id="Uml.Integer" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="ocbbf3fe515824cb595afbb9dfa889214960" cid="OP007" name="setXposition" creation-date="07/26/2025 22:24:22" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p2c6544ece02d46a7b071fbf11aa6b111" name="x" type="Integer" type-id="Uml.Integer" creation-date="07/26/2025 22:24:32" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o4f2bb2f02a4f4d4d94fd9bdb4092fb41376" cid="OP008" name="setYposition" creation-date="07/26/2025 22:25:18" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p7506d30676c149d1bc52ad76783fa1b7" name="y" type="Integer" type-id="Uml.Integer" creation-date="07/26/2025 22:25:34" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="cdcde4e1bafa4f869918a229a2d88e4d" cid="REL005" type="relationship" name="1 ... 1" creation-date="08/09/2025 12:40:29" from="f089dc9030224615a2a114b94fef5bd4" to="658852cc53894e459e6392a27645b73f" visibility="package">
+            <relation from="f089dc9030224615a2a114b94fef5bd4" to="658852cc53894e459e6392a27645b73f" derived="false">
+              <start-role id="umlar-a43bb5c2-f1cc-4a9f-8edb-de9569ca5389" name="" navigability="" association-type="composition" visibility="private" />
+              <end-role id="umlar-b2c2fe68-e3f5-4473-8d3c-73f62fc8555d" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="ce3a57b06645406991dc98ae832ea8f2" cid="GNR003" type="generalization" creation-date="08/09/2025 12:53:03" from="926d82fa5df04a6ba43f7dbec0df338d" to="7fbb8b08b6bd401bbab0876b7d467f66" visibility="package" />
+          <item id="b8e6960bc04045a68ccc48461f983f58" cid="REL001" type="relationship" creator="" creation-date="07/26/2025 21:45:21" from="f089dc9030224615a2a114b94fef5bd4" to="23ea506e2cd246559610a51659600ec0" visibility="package">
+            <owned-items />
+            <relation from="f089dc9030224615a2a114b94fef5bd4" to="23ea506e2cd246559610a51659600ec0" derived="false">
+              <start-role id="umlar-f756cf08-dd10-4f01-aa8b-b2eb60b031a3" name="" navigability="" association-type="association" visibility="private" property-ref="b61ce4221b714a779bb5b3ced79e1550" />
+              <end-role id="umlar-6f89e20f-802e-4734-a079-77a2c4ac2eaf" name="" navigability="" association-type="association" visibility="private" property-ref="8413f10a373e488389772cbd6dd2f43f" />
+            </relation>
+          </item>
+          <item id="dc15a2d15f69402d9b9c37bf7364a658" cid="C011" type="class" name="SizeChanger &lt;&lt;static&gt;&gt;" creation-date="08/09/2025 13:48:33">
+            <operations>
+              <operation id="o2732222550834508b08d3b09e9a04c3c640" cid="OP031" name="changeSize" creation-date="08/09/2025 14:04:46" type="Snake *" type-id="Snake *" visibility="undefined">
+                <parameters>
+                  <parameter id="pa224dd7463b24a38886049bfa9658e3d" name="headSnake" type="Snake *" type-id="Snake *" creation-date="08/09/2025 14:05:06" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="a29591e8522c479eb66d1a7d1568eafd" cid="GNR005" type="generalization" creation-date="08/09/2025 13:13:28" from="cfc18bddd71c4c0886bc6ecb92fcca0e" to="23ea506e2cd246559610a51659600ec0" visibility="package" />
+          <item id="aa5b0d1ed5d947b092dbef451c5c942b" cid="GNR001" type="generalization" creator="" creation-date="07/26/2025 21:55:19" from="7fbb8b08b6bd401bbab0876b7d467f66" to="23ea506e2cd246559610a51659600ec0" visibility="package" />
+          <item id="7bb7cca2ae014284850ae16feb0dc90d" cid="REL007" type="relationship" creation-date="08/09/2025 13:38:06" to="556f3e63e1b149b5ac2446cee34236fa" visibility="package">
+            <owned-items />
+            <relation from="658852cc53894e459e6392a27645b73f" to="556f3e63e1b149b5ac2446cee34236fa" derived="false">
+              <start-role id="umlar-1d700e11-5aaa-4fd3-9cf7-3f1e58e1e2d8" name="" navigability="" association-type="association" visibility="private" property-ref="1d14eb097f0f45d19d26136bb75d92f3" />
+              <end-role id="umlar-1d144897-e49e-4fc4-8df5-298ce5c2c5cf" name="" navigability="" association-type="association" visibility="private" property-ref="95b948c6993246919ef64d268a330da8" />
+            </relation>
+          </item>
+          <item id="72b0e079f0f948868b512e875268436a" cid="E002" type="enumeration" name="RewardType" creator="" creation-date="07/26/2025 22:14:18" visibility="undefined">
+            <enumeration-items>
+              <enumeration-item id="af4a0d3e5f0be41b89b8e8a7678359f5f328" cid="ENI003" name="Apple" creation-date="07/26/2025 22:14:54" value="1" />
+              <enumeration-item id="add3be10003784bad8073cdd3fd9ca8b2321" cid="ENI004" name="Banana" creation-date="07/26/2025 22:15:06" value="2" />
+            </enumeration-items>
+          </item>
+          <item id="658852cc53894e459e6392a27645b73f" cid="C006" type="class" name="Controller" creation-date="08/09/2025 12:38:30">
+            <owned-items />
+            <attributes>
+              <attribute id="a614743d0d048492d8a650d1e0b049b029" cid="PROP025" name="input" creation-date="08/09/2025 13:38:39" property-ref="f5b12857435d4568893269cf62072540" />
+              <attribute id="a242ce1f9165a4012ba90974ce9ace350981" cid="PROP027" name="LastSnake" creation-date="08/09/2025 13:51:38" property-ref="ca8d13f47f584e5e85a9684ea10d03e5" />
+            </attributes>
+            <operations>
+              <operation id="o4b6711a8c7b54feaa1b7b813766c24d1307" cid="OP032" name="mover" creation-date="08/09/2025 16:53:33" type="void" type-id="void" visibility="undefined">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="7014d4b4793d4e279221550e9319bca0" cid="C005" type="class" name="Reward" creator="" creation-date="07/26/2025 21:55:35" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a065f88e13739419ba9ba857b9db18752424" cid="PROP012" name="RewardValue" creation-date="07/26/2025 22:05:51" property-ref="9ee04c7ed2044866b252e818a3eb440c" />
+              <attribute id="a80dc6660cdbd439f8198f54196a255e2704" cid="PROP016" name="Type" creation-date="07/26/2025 22:32:17" property-ref="47ff7629b3bf4212ac05a6a044e99d56" />
+            </attributes>
+            <operations>
+              <operation id="o037551bdd0d04aa8818be17068abcf22498" cid="OP009" name="getXposition" creation-date="07/26/2025 22:27:07" type="Integer" type-id="Uml.Integer" visibility="undefined">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="ob6969ffbb72a4757b549c0775cb80f5e433" cid="OP010" name="getYposition" creation-date="07/26/2025 22:29:20" type="Integer" type-id="Uml.Integer" visibility="undefined">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="odfd3c0a478c54f76b7df42fbb90d2efa256" cid="OP011" name="setXposition" creation-date="07/26/2025 22:29:39" type="" type-id="" visibility="undefined">
+                <parameters>
+                  <parameter id="p05aa4bf4f3a24a0eb64168ddedc6fa19" name="x" type="Integer" type-id="Uml.Integer" creation-date="07/26/2025 22:29:48" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="ofef2cbd425e443c9b93ab843c6bd40b6312" cid="OP012" name="setYposition" creation-date="07/26/2025 22:29:57" type="" type-id="" visibility="undefined">
+                <parameters>
+                  <parameter id="p879e43e7e0cb4408b50b0a026d7d0f3f" name="y" type="Integer" type-id="Uml.Integer" creation-date="07/26/2025 22:30:05" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="od7005a2c69094a4ba75712e3b591575a272" cid="OP013" name="setRewardValue" creation-date="07/26/2025 22:33:18" type="" type-id="" visibility="undefined">
+                <parameters>
+                  <parameter id="p2c4eb4c26db54eb48c441d372930bbf7" name="value" type="Integer" type-id="Uml.Integer" creation-date="07/26/2025 22:33:37" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oad9896322a2b45d68aef5c142c4c514c105" cid="OP014" name="getRewardValue" creation-date="07/26/2025 22:33:57" type="Integer" type-id="Uml.Integer" visibility="undefined">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o7ed59725c5cb4b1d8b3d90a5cfd8737e184" cid="OP015" name="setRewardType" creation-date="07/26/2025 22:35:50" type="" type-id="" visibility="undefined">
+                <parameters>
+                  <parameter id="p626d46d5278245398cced49b8853247e" name="type" type="RewardType" type-id="Class:72b0e079f0f948868b512e875268436a" creation-date="07/26/2025 22:36:10" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o78900612f70d4f7582f3d5219d95837159" cid="OP016" name="getRewardType" creation-date="07/26/2025 22:36:29" type="RewardType" type-id="Class:72b0e079f0f948868b512e875268436a" visibility="undefined">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="23ea506e2cd246559610a51659600ec0" cid="C003" type="class" name="Object &lt;&lt;abstract&gt;&gt;" creator="" creation-date="07/26/2025 21:45:21" visibility="undefined" is-abstract="true">
+            <owned-items />
+            <attributes>
+              <attribute id="afc319d9b079d417cbaa36fc6f33fb02d807" cid="PROP005" name="Xposition: int" creation-date="07/26/2025 21:46:03" property-ref="a962e94b982c477a89b9c18e47bc954e" />
+              <attribute id="a2a0aab04207c451ca7c6b1856e32f5c7431" cid="PROP006" name="Yposition: int" creation-date="07/26/2025 21:46:09" property-ref="088e1086551f4147921d88904b870ca0" />
+            </attributes>
+            <operations>
+              <operation id="oc3910623e1894b22a2157392eddf7d7c109" cid="OP001" name="getXposition" creation-date="07/26/2025 21:47:07" type="Integer" type-id="Uml.Integer" visibility="public" abstract="true">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o95bbf70efcd548179d2830d171a57a61576" cid="OP002" name="getYposition" creation-date="07/26/2025 21:48:33" type="Integer" type-id="Uml.Integer" visibility="public" abstract="true">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o8fc1366ecf8149b28c2a9db60a9b17ff354" cid="OP003" name="setXposition" creation-date="07/26/2025 21:49:43" type="" type-id="" visibility="public" abstract="true">
+                <parameters>
+                  <parameter id="pb9fd55cd17094b63becb8546a2c2824f" name="x" type="Integer" type-id="Uml.Integer" creation-date="07/26/2025 21:50:02" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oa75365cf03cd42a98afbf69a6eb7139641" cid="OP004" name="setYposition" creation-date="07/26/2025 21:51:22" type="" type-id="" visibility="public" abstract="true">
+                <parameters>
+                  <parameter id="p8e0ba5ce9cbb4ecfa48d7928c6416ff1" name="y" type="Integer" type-id="Uml.Integer" creation-date="07/26/2025 21:51:31" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="556f3e63e1b149b5ac2446cee34236fa" cid="C010" type="class" name="Input" creation-date="08/09/2025 13:38:06">
+            <owned-items />
+            <attributes>
+              <attribute id="a7c8aa2186018429baf2d8330a47c821c480" cid="PROP022" name="input" creation-date="08/09/2025 13:27:34" property-ref="330df9bea70749fabbd9a7cb63b193bc" />
+            </attributes>
+            <operations>
+              <operation id="o29f2d83723d4438688ace31acdb95e66960" cid="OP029" name="getInput" creation-date="08/09/2025 13:31:15" type="Char" type-id="Uml.Char" visibility="undefined">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o89ab9387f7e04148b9086e044028ccb5896" cid="OP030" name="setInput" creation-date="08/09/2025 13:31:31" type="" type-id="" visibility="undefined">
+                <parameters>
+                  <parameter id="p867f7548b8594c75a43e0337554bbe4b" name="input" type="Char" type-id="Uml.Char" creation-date="08/09/2025 13:31:45" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+          </item>
+          <item id="f089dc9030224615a2a114b94fef5bd4" cid="C002" type="class" name="BuildBoard" creator="" creation-date="07/26/2025 21:42:53" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a24b1ed24c5984379b0101bfebbd49e0d693" cid="PROP001" name="_board" creation-date="07/26/2025 21:43:50" property-ref="9dd119a0ba9c4cf6a2de727f4f82b6a7" />
+              <attribute id="a2056e674d9194679a3a7b3b3f693608a470" cid="PROP002" name="objects" creation-date="07/26/2025 21:44:11" property-ref="3d75436df74a4844b5627b0748a19d01" />
+            </attributes>
+            <operations>
+              <operation id="o5346fc9a390848278e83da8277a6deae23" cid="OP019" name="printBoard" creation-date="08/09/2025 12:34:34" type="void" type-id="void" visibility="undefined">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="e6dbcd60011844e780a8d87a30287806" cid="REL008" type="relationship" name="1 ... N" creation-date="08/09/2025 17:00:34" from="f089dc9030224615a2a114b94fef5bd4" to="23ea506e2cd246559610a51659600ec0" visibility="package">
+            <relation from="f089dc9030224615a2a114b94fef5bd4" to="23ea506e2cd246559610a51659600ec0" derived="false">
+              <start-role id="umlar-8a64f2ba-0e81-4e97-9095-005c98d6f86c" name="" navigability="" association-type="composition" visibility="private" />
+              <end-role id="umlar-ea5276e7-c7d7-427f-9a9d-549184feff17" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="e02de2d734164abb9b625a09a64f7eac" cid="GNR002" type="generalization" creator="" creation-date="07/26/2025 21:55:35" from="7014d4b4793d4e279221550e9319bca0" to="23ea506e2cd246559610a51659600ec0" visibility="package" />
+          <item id="0e34200dec184d208594dd61399ab330" cid="GNR004" type="generalization" creation-date="08/09/2025 12:57:06" from="2f4d6207a7db4840bbfe31d1a437c6c0" to="7fbb8b08b6bd401bbab0876b7d467f66" visibility="package" />
+          <item id="330df9bea70749fabbd9a7cb63b193bc" cid="PROP022" type="property" name="input" owner="556f3e63e1b149b5ac2446cee34236fa" creation-date="08/09/2025 13:27:34" visibility="protected">
+            <structural-feature type="Char" type-id="Uml.Char" />
+            <property />
+          </item>
+          <item id="9ef8989947b44a32a213985813ce93e8" cid="REL003" type="relationship" creator="" creation-date="07/26/2025 22:14:18" from="7014d4b4793d4e279221550e9319bca0" to="72b0e079f0f948868b512e875268436a" visibility="package">
+            <owned-items />
+            <relation from="7014d4b4793d4e279221550e9319bca0" to="72b0e079f0f948868b512e875268436a" derived="false">
+              <start-role id="umlar-9740b448-c821-40fb-8603-bfa828d60deb" name="" navigability="" association-type="association" visibility="private" property-ref="414e317d8caa42169f4d1eb406d5f373" />
+              <end-role id="umlar-78800776-6a1b-43e5-836f-6511b7cdc594" name="" navigability="" association-type="association" visibility="private" property-ref="6e6e582cd7084e649c44a1d8d75a98d5" />
+            </relation>
+          </item>
+          <item id="cfc18bddd71c4c0886bc6ecb92fcca0e" cid="C009" type="class" name="EmptyPLace" creation-date="08/09/2025 13:13:28">
+            <operations>
+              <operation id="of7cc326b6b964866869267eb280e07c1719" cid="OP024" name="getXposition" creation-date="08/09/2025 13:17:15" type="Integer" type-id="Uml.Integer" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o790fe5ac8ab04b97a9e47f6dbf3c9e56832" cid="OP025" name="getYposition" creation-date="08/09/2025 13:17:36" type="Integer" type-id="Uml.Integer" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o10c095e58718457fa7bde0ac1040258c111" cid="OP026" name="setXposition" creation-date="08/09/2025 13:18:04" type="void" type-id="void" visibility="public">
+                <parameters>
+                  <parameter id="pfec090746c9645e28b6629bf5883fb46" name="x" type="Integer" type-id="Uml.Integer" creation-date="08/09/2025 13:18:17" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o4a6c8a0aabe340aca1450191b47d059c911" cid="OP027" name="setYposition" creation-date="08/09/2025 13:18:37" type="void" type-id="void" visibility="public">
+                <parameters>
+                  <parameter id="p83f957492f9847f9bed10fd1c99f9dc0" name="y" type="Integer" type-id="Uml.Integer" creation-date="08/09/2025 13:18:48" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o7f659e6cb5cf4e1285f8f6dd0ec70387815" cid="OP028" name="isEmpty" creation-date="08/09/2025 13:22:30" type="Boolean" type-id="Uml.Boolean" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="926d82fa5df04a6ba43f7dbec0df338d" cid="C007" type="class" name="SnakeHead" creation-date="08/09/2025 12:53:03">
+            <owned-items />
+            <attributes>
+              <attribute id="a9ae11ba156594223b6df3ecef38bb5cd185" cid="PROP017" name="head" creation-date="07/26/2025 22:37:50" property-ref="76dbdd09a2bc4f7e9041c78e19f57c71" />
+            </attributes>
+            <operations>
+              <operation id="o91a92948d6584b66890474623829a448850" cid="OP018" name="setHead" creation-date="07/26/2025 22:41:44" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pa8604e594ca8455882fdc6ebdc5cd3be" name="head" type="Snake *" type-id="Snake *" creation-date="07/26/2025 22:41:53" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o7461e5bb1dbd41b284ab27b36a05b4ea920" cid="OP017" name="getHead" creation-date="07/26/2025 22:40:50" type="Snake *" type-id="Snake *" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o3ccaa2ac2b4541d6918893eb669b71da695" cid="OP020" name="getXposition" creation-date="08/09/2025 13:00:18" type="Integer" type-id="Uml.Integer" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oaf8fe7b39f354faaaa48e2724a2894fe233" cid="OP021" name="getYposition" creation-date="08/09/2025 13:00:46" type="Integer" type-id="Uml.Integer" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="obad934e31ea74fa2ab603fb1af6c8cf0864" cid="OP022" name="setXposition" creation-date="08/09/2025 13:00:56" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pc1189640d8414a93a0c820d17a543b35" name="x" type="Integer" type-id="Uml.Integer" creation-date="08/09/2025 13:01:14" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o6afa8d17bde944fd87f3fdc321b2c60b832" cid="OP023" name="setYposition" creation-date="08/09/2025 13:01:26" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p96bb59ecafdd46b19b9f4182f031b5d4" name="y" type="Integer" type-id="Uml.Integer" creation-date="08/09/2025 13:01:40" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+        </abstract-items>
+        <layer id="662a64c55eac429c8c2e345fdec6a82a" name="Default" visible="true" enabled="true" locked="false">
+          <item id="f089dc9030224615a2a114b94fef5bd4" iid="026204c43d3a4e8b971c0ba14cc86c5e" show-fields="true" creation-date="07/26/2025 21:42:53" order-index="0" type="entity">
+            <layout ax="282" ay="-237" awidth="234" aheight="239" x="282" y="-237" width="234" height="239" />
+            <classifier />
+            <class />
+          </item>
+          <item id="23ea506e2cd246559610a51659600ec0" iid="a2301798410e4c49b6060f8f9c980658" creation-date="07/26/2025 21:45:21" order-index="1" type="entity">
+            <layout ax="796" ay="-237" awidth="234" aheight="239" x="796" y="-237" width="140" height="239" />
+            <classifier />
+            <class />
+          </item>
+          <item id="aa5b0d1ed5d947b092dbef451c5c942b" iid="689b8fcd0fc44baba6e57e782e6481fa" creation-date="07/26/2025 21:55:19" order-index="6" type="relation">
+            <layout line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1005" y1="188" x2="913" y2="2" start-border-pos="0.06131640051165198" end-border-pos="0.625" end-local-pos="117" name-position="0,20">
+              <points>
+                <point x="1005" y="188" />
+                <point x="913" y="2" />
+              </points>
+            </layout>
+            <relation from="7fbb8b08b6bd401bbab0876b7d467f66" from-iid="04634418887640b2b452616af45e3119" to="23ea506e2cd246559610a51659600ec0" to-iid="a2301798410e4c49b6060f8f9c980658" />
+          </item>
+          <item id="7014d4b4793d4e279221550e9319bca0" iid="c143c0e926224af9893b4576eb51e867" creation-date="07/26/2025 21:55:35" order-index="7" type="entity">
+            <layout ax="1361" ay="120.5" awidth="234" aheight="239" x="1361" y="120.5" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="7fbb8b08b6bd401bbab0876b7d467f66" iid="04634418887640b2b452616af45e3119" creation-date="07/26/2025 21:55:19" order-index="5" type="entity">
+            <layout ax="948" ay="188.25" awidth="234" aheight="239" x="948" y="188.25" width="140" height="239" />
+            <classifier />
+            <class />
+          </item>
+          <item id="e02de2d734164abb9b625a09a64f7eac" iid="12f9156881b44fa38791b51f94ca42d6" creation-date="07/26/2025 21:55:35" order-index="8" type="relation">
+            <layout line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1361" y1="191" x2="913" y2="2" start-border-pos="0.9265533032277637" end-border-pos="0.625" end-local-pos="117" name-position="0,20">
+              <points>
+                <point x="1361" y="191" />
+                <point x="913" y="2" />
+              </points>
+            </layout>
+            <relation from="7014d4b4793d4e279221550e9319bca0" from-iid="c143c0e926224af9893b4576eb51e867" to="23ea506e2cd246559610a51659600ec0" to-iid="a2301798410e4c49b6060f8f9c980658" />
+          </item>
+          <item id="72b0e079f0f948868b512e875268436a" iid="a411c19a65184c1eb7d240f7b8544357" creation-date="07/26/2025 22:14:18" order-index="9" type="entity">
+            <layout ax="1681" ay="302" awidth="140" aheight="160" x="1681" y="302" width="140" height="160" />
+          </item>
+          <item id="9ef8989947b44a32a213985813ce93e8" iid="ec8f0f2cbd3b42218a24e4798e43be2d" creation-date="07/26/2025 22:14:18" order-index="10" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="1595" y1="240" x2="1681" y2="318" start-border-pos="0.375" end-border-pos="0.9745593070983887" start-local-pos="234" name-position="0,20">
+              <points>
+                <point x="1595" y="240" />
+                <point x="1681" y="318" />
+              </points>
+            </layout>
+            <relation from="7014d4b4793d4e279221550e9319bca0" from-iid="c143c0e926224af9893b4576eb51e867" to="72b0e079f0f948868b512e875268436a" to-iid="a411c19a65184c1eb7d240f7b8544357" />
+          </item>
+          <item id="658852cc53894e459e6392a27645b73f" iid="9e33b58892834cf1bd6bb98dbd41771c" show-fields="true" creation-date="08/09/2025 12:38:30" order-index="11" type="entity">
+            <layout ax="125" ay="212.25" awidth="223" aheight="227.5" x="125" y="212.25" width="223" height="227.5" />
+            <classifier />
+            <class />
+          </item>
+          <item id="cdcde4e1bafa4f869918a229a2d88e4d" iid="d94bd0d3ab4e4c63bfcde741bd9fef81" creation-date="08/09/2025 12:40:29" order-index="12" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="399" y1="2" x2="293" y2="212" start-border-pos="0.625" end-border-pos="0.1887352776634319" name-position="45.042175,13">
+              <points>
+                <point x="399" y="2" />
+                <point x="293" y="212" />
+              </points>
+            </layout>
+            <relation from="f089dc9030224615a2a114b94fef5bd4" from-iid="026204c43d3a4e8b971c0ba14cc86c5e" to="658852cc53894e459e6392a27645b73f" to-iid="9e33b58892834cf1bd6bb98dbd41771c" />
+          </item>
+          <item id="926d82fa5df04a6ba43f7dbec0df338d" iid="9a95f901134f4a01b34275b3e9072f89" creation-date="08/09/2025 12:53:03" order-index="13" type="entity">
+            <layout ax="770" ay="557.5" awidth="234" aheight="239" x="770" y="557.5" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="ce3a57b06645406991dc98ae832ea8f2" iid="40d51ee8e3f942688b12861e266c0eaf" creation-date="08/09/2025 12:53:03" order-index="14" type="relation">
+            <layout line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="972" y1="558" x2="1065" y2="427" start-border-pos="0.21552139673477563" end-border-pos="0.625" end-local-pos="117" name-position="0,20">
+              <points>
+                <point x="972" y="558" />
+                <point x="1065" y="427" />
+              </points>
+            </layout>
+            <relation from="926d82fa5df04a6ba43f7dbec0df338d" from-iid="9a95f901134f4a01b34275b3e9072f89" to="7fbb8b08b6bd401bbab0876b7d467f66" to-iid="04634418887640b2b452616af45e3119" />
+          </item>
+          <item id="0e34200dec184d208594dd61399ab330" iid="628436b07cc0485ea0d0a0688000c430" creation-date="08/09/2025 12:57:06" order-index="16" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1299" y1="568" x2="1065" y2="427" start-border-pos="0.125" end-border-pos="0.625" start-local-pos="117" end-local-pos="117" name-position="0,20">
+              <points>
+                <point x="1299" y="568" />
+                <point x="1065" y="427" />
+              </points>
+            </layout>
+            <relation from="2f4d6207a7db4840bbfe31d1a437c6c0" from-iid="7f83f01bf76941bdb78836c4d57099da" to="7fbb8b08b6bd401bbab0876b7d467f66" to-iid="04634418887640b2b452616af45e3119" />
+          </item>
+          <item id="cfc18bddd71c4c0886bc6ecb92fcca0e" iid="0a90730d195142cea2d431204366116d" creation-date="08/09/2025 13:13:28" order-index="17" type="entity">
+            <layout ax="585" ay="188.25" awidth="234" aheight="239" x="585" y="188.25" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="a29591e8522c479eb66d1a7d1568eafd" iid="ffee26494786440ea5a837a31463cf47" creation-date="08/09/2025 13:13:28" order-index="18" type="relation">
+            <layout line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="785" y1="188" x2="913" y2="2" start-border-pos="0.2134029029780983" end-border-pos="0.625" end-local-pos="117" name-position="0,20">
+              <points>
+                <point x="785" y="188" />
+                <point x="913" y="2" />
+              </points>
+            </layout>
+            <relation from="cfc18bddd71c4c0886bc6ecb92fcca0e" from-iid="0a90730d195142cea2d431204366116d" to="23ea506e2cd246559610a51659600ec0" to-iid="a2301798410e4c49b6060f8f9c980658" />
+          </item>
+          <item id="2f4d6207a7db4840bbfe31d1a437c6c0" iid="7f83f01bf76941bdb78836c4d57099da" creation-date="07/26/2025 21:55:19" order-index="0" type="entity">
+            <layout ax="1182" ay="567.5" awidth="234" aheight="239" x="1182" y="567.5" width="140" height="239" />
+            <classifier />
+            <class />
+          </item>
+          <item id="556f3e63e1b149b5ac2446cee34236fa" iid="c040e469be564bfe9758b026afcc6243" creation-date="08/09/2025 13:38:06" order-index="20" type="entity">
+            <layout ax="-272.5" ay="212.25" awidth="223" aheight="227" x="-272.5" y="212.25" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="7bb7cca2ae014284850ae16feb0dc90d" iid="2651f66e824942ae89881485aa0579b1" creation-date="08/09/2025 13:38:06" order-index="21" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="125" y1="326" x2="-50" y2="326" start-border-pos="0.875" end-border-pos="0.37527533039647576" start-local-pos="113.75" name-position="0,20">
+              <points>
+                <point x="125" y="326" />
+                <point x="80" y="326" />
+                <point x="-50" y="326" />
+              </points>
+            </layout>
+            <relation to="556f3e63e1b149b5ac2446cee34236fa" to-iid="c040e469be564bfe9758b026afcc6243" />
+          </item>
+          <item id="a78c2f7d548046be98749215580e5131" iid="b425ccf032594bbfbc70426d1eb0087f" creation-date="08/09/2025 12:40:29" order-index="0" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="399" y1="2" x2="293" y2="212" start-border-pos="0.625" end-border-pos="0.1887352776634319" name-position="-308,201.08691">
+              <points>
+                <point x="399" y="2" />
+                <point x="293" y="212" />
+              </points>
+            </layout>
+            <relation />
+          </item>
+          <item id="dc15a2d15f69402d9b9c37bf7364a658" iid="ad0906b22a2449f0aa9fa4e11f7a645b" show-fields="true" creation-date="08/09/2025 13:48:33" order-index="22" type="entity">
+            <layout ax="369" ay="573.5" awidth="216" aheight="227" x="369" y="573.5" width="216" height="227" />
+            <classifier />
+            <class />
+          </item>
+          <item id="d40a9cf87b524425a565ba31035c0a23" iid="4c349a969ccc43afbcba0f854fb1d50d" creation-date="08/09/2025 14:09:19" order-index="23" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="348" y1="440" x2="418" y2="574" start-border-pos="0.5" end-border-pos="0.05669420736807364" name-position="44.042175,-17">
+              <points>
+                <point x="348" y="440" />
+                <point x="418" y="574" />
+              </points>
+            </layout>
+            <relation from="658852cc53894e459e6392a27645b73f" from-iid="9e33b58892834cf1bd6bb98dbd41771c" to="dc15a2d15f69402d9b9c37bf7364a658" to-iid="ad0906b22a2449f0aa9fa4e11f7a645b" />
+          </item>
+          <item id="e6dbcd60011844e780a8d87a30287806" iid="f41c143ce5a44c6ab7f67320cb2ca4e1" creation-date="08/09/2025 17:00:34" order-index="24" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="516" y1="-118" x2="796" y2="-118" start-border-pos="0.37447698744769875" end-border-pos="0.8755230125523012" name-position="0,20">
+              <points>
+                <point x="516" y="-118" />
+                <point x="796" y="-118" />
+              </points>
+            </layout>
+            <relation from="f089dc9030224615a2a114b94fef5bd4" from-iid="026204c43d3a4e8b971c0ba14cc86c5e" to="23ea506e2cd246559610a51659600ec0" to-iid="a2301798410e4c49b6060f8f9c980658" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
