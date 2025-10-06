@@ -14,6 +14,7 @@ class queue
 		int front();
 		int back();
 		int backIndex();
+		int frontIndex();
 		bool isEmpty();
 		bool isFull();
 		int size();

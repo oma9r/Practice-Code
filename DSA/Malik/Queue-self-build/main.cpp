@@ -8,23 +8,18 @@ int main() {
 
     // Test default constructor
     queue q1;
-    cout << "Queue q1 created with default constructor with defulat size: " << q1.capacity() << endl;
+    cout << "Queue q1 created with default constructor.\n";
 
     // Test parameterized constructor
     queue q2(5);
-    cout << "Queue q2 created with size: " << q2.capacity() << endl;
+    cout << "Queue q2 created with size 5.\n";
 
     // Test push
     cout << "\nPushing elements into q2:\n";
-    cout << "Back index: " << q2.backIndex() << endl;
-
     for (int i = 1; i <= 5; i++) {
-        if (!q2.isFull()) 
-	{
+        if (!q2.isFull()) {
             q2.push(i * 10);
             cout << "Pushed " << i * 10 << endl;
-	    cout << "Current size: " << q2.size() << endl;
-	    cout << "Back index: " << q2.backIndex() << endl;
         }
     }
 

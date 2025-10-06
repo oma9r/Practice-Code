@@ -47,6 +47,10 @@ int queue::backIndex()
 	return backQueue;
 };
 
+int queue::frontIndex()
+{
+	return frontQueue;
+};
 bool queue::isEmpty()
 {
 	return (count == 0);
@@ -90,7 +94,7 @@ void queue::pop()
 	
 	else
 	{
-		--frontQueue;
+		++frontQueue;
 		--count;
 	}
 };
