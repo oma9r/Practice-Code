@@ -29,11 +29,14 @@ int partition(int arr[], int start, int end)
 }
 
 
-void quickSort(int arr[], int start, int end) {
-  
-    while (start < end) {
 
-        int pi = partition(arr, start, end);
+void quickSort(int arr[], int start, int end) {
+
+	int pi = 1;
+  
+    while (pi > 0) {
+
+        pi = partition(arr, start, end);
 
 
 	
@@ -44,9 +47,6 @@ void quickSort(int arr[], int start, int end) {
 
 	 pi = partition(arr, pi + 1, end);
 
-	//end = pi - 1;
-
-	//start = pi + 1;
 
     }
 }
