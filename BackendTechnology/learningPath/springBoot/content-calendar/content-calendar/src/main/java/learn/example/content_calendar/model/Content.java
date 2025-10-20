@@ -3,6 +3,7 @@ package learn.example.content_calendar.model;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+
 public record Content(
         Integer id,
         String title,

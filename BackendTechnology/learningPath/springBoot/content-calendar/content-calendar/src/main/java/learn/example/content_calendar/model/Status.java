@@ -1,6 +1,7 @@
 package learn.example.content_calendar.model;
 
 public enum Status {
+
     IDEA,
     IN_PROGRESS,
     COMPLETED,
