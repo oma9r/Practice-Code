@@ -1,11 +1,11 @@
 package com.courseTwo.patients.controller;
 
 
+import com.courseTwo.patients.model.Patient;
 import com.courseTwo.patients.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/patients")
@@ -16,9 +16,20 @@ public class PatientController {
 
 
     @GetMapping("/print-name")
-    public String printPatientName(){
-        return this.patientService.printName("Omar Abu");
+    public ResponseEntity printPatientName(@RequestParam String name,@RequestParam("a") Integer age) {
+        return ResponseEntity.ok(patientService.printName(name,age));
     }
+
+    @GetMapping("/get-patients")
+    public ResponseEntity getPatients(){
+        return ResponseEntity.ok(patientService.getPatients());
+    }
+
+    @PostMapping("/save")
+    public ResponseEntity savePatient(@RequestBody Patient patient){
+        return ResponseEntity.ok(patient);
+    }
+
 
 
 }
