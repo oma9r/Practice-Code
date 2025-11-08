@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.82" multi-file="no" uid="simp37f9d698fbd643e0a011692815b386c3" creation-date="11/09/2025 00:43:28">
+  <meta>
+    <name>MergeSortFlowChart</name>
+    <authors>Omar Abumazen</authors>
+    <description>The flow chart is describe how the merge sort is work.</description>
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="flowchart-start-end" type="Start End" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="flowchart-decision" type="Decision" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="flowchart-process" type="Process" />
+        <value>3</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="flowchart-start-end" type="Start End" />
+        <value>7</value>
+      </counter>
+      <counter>
+        <item-type type-id="flowchart-decision" type="Decision" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="flowchart-flow" type="Flow" />
+        <value>7</value>
+      </counter>
+      <counter>
+        <item-type type-id="flowchart-process" type="Process" />
+        <value>4</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.Other.QuickDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.Other.FlowchartDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-88a23dfead094c2eb36da98ed357cd30" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-425eaff55ebe456484ae11d4c2a4bbfb" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p31c26e4460384e778b50c705a1d3d52a_456287135" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>11/09/2025 00:43:28</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="quick-diagram" id="p869645ad9e4f43078cb7297735fd137b_442709596" name="QuickDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>11/09/2025 00:43:28</creation-date>
+          <change-date>11/09/2025 00:43:28</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="3cc8713bf23b48bf88dcc2105eec717b" name="Default" visible="true" enabled="true" locked="false" />
+      </diagram>
+      <diagram type="flowchart" id="p9d9c23fbcc82479c8ae6b6c6d246c224_123983812" name="FlowchartDiagram1" order-index="2" overview-order-index="0" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="0,16" zoom="0.05">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>11/09/2025 00:44:45</creation-date>
+          <change-date>11/09/2025 01:02:46</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="36313539ec364f6aa526efedd41f6fab" cid="FCP001" type="flowchart-process" name="mid = high / 2 " creator="" creation-date="11/09/2025 00:47:38">
+            <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;96;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;44;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;96;B" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;44;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;44;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;96;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;44;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;96;B" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;44;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;44;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+          </item>
+          <item id="a0823b28a73945bfbdf4f4697da715e5" cid="FCF001" type="flowchart-flow" creator="" creation-date="11/09/2025 00:46:28" from="916510733e904b73b2995e9836376522" to="154b96ab424346a682c5d8e68950383a" />
+          <item id="c3d7b20603fe402c93d8da6b6627f363" cid="FCF002" type="flowchart-flow" creator="" creation-date="11/09/2025 00:47:38" from="154b96ab424346a682c5d8e68950383a" to="36313539ec364f6aa526efedd41f6fab" />
+          <item id="154b96ab424346a682c5d8e68950383a" cid="FCDC001" type="flowchart-decision" name="if(low &lt; high)" creator="" creation-date="11/09/2025 00:46:28">
+            <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;96;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;44;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;96;B" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;44;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;44;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;96;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;44;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;96;B" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;44;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;44;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+          </item>
+          <item id="0d56f55e04b74ab19f859bfd6b582168" cid="FCF006" type="flowchart-flow" creator="" creation-date="11/09/2025 01:02:46" from="916510733e904b73b2995e9836376522" to="37dfa98f10c4426585bb515dbf27b21a">
+            <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="10" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="10" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+          </item>
+          <item id="e83c76b4f56b4c19bed7ff03da25d71e" cid="FCP003" type="flowchart-process" name="low = mid  + 1, high = high" creator="" creation-date="11/09/2025 00:59:52">
+            <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;96;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;44;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;96;B" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;44;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;44;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;96;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;44;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;96;B" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;44;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;44;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+          </item>
+          <item id="37dfa98f10c4426585bb515dbf27b21a" cid="FCP002" type="flowchart-process" name="low = low, high = mid" creator="" creation-date="11/09/2025 00:48:15">
+            <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;96;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;44;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;96;B" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;44;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;44;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;96;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;44;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;96;B" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;44;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;44;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+          </item>
+          <item id="376a01ae18664f39a7ee93be21a1b3ef" cid="FCF003" type="flowchart-flow" creator="" creation-date="11/09/2025 00:48:15" from="36313539ec364f6aa526efedd41f6fab" to="37dfa98f10c4426585bb515dbf27b21a" />
+          <item id="b7c56c65cee6468e8f237220165aace6" cid="FCF004" type="flowchart-flow" creator="" creation-date="11/09/2025 00:59:52" from="37dfa98f10c4426585bb515dbf27b21a" to="e83c76b4f56b4c19bed7ff03da25d71e" />
+          <item id="916510733e904b73b2995e9836376522" cid="ELEM001" type="flowchart-start-end" name="Start" creator="" creation-date="11/09/2025 00:45:06">
+            <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;30;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;30;B" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="3" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;30;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;30;B" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+          </item>
+        </abstract-items>
+        <layer id="89430cae3c0a425692514f54f5812ea5" name="Default" visible="true" enabled="true" locked="false">
+          <item id="916510733e904b73b2995e9836376522" iid="354b48413fe24886806691a66c40db16" creation-date="11/09/2025 00:45:06" order-index="0" type="entity">
+            <layout ax="11270" ay="1580" awidth="3010" aheight="1070" x="11270" y="1580" width="3010" height="1070" />
+          </item>
+          <item id="154b96ab424346a682c5d8e68950383a" iid="9c852ccd820343589c2a52d4b0049cbc" creation-date="11/09/2025 00:46:28" order-index="1" type="entity">
+            <layout ax="11280" ay="3785" awidth="3111" aheight="2540" x="11280" y="3785" width="3111" height="2540" />
+          </item>
+          <item id="a0823b28a73945bfbdf4f4697da715e5" iid="b7820c2824bd449da38bf1b5c84285b8" creation-date="11/09/2025 00:46:28" order-index="2" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="12786" y1="2650" x2="12810" y2="3805" start-border-pos="0.6240780244237957" end-border-pos="0.12292264658168596" name-position="0,20">
+              <points>
+                <point x="12786" y="2650" />
+                <point x="12810" y="3805" />
+              </points>
+            </layout>
+            <relation from="916510733e904b73b2995e9836376522" from-iid="354b48413fe24886806691a66c40db16" to="154b96ab424346a682c5d8e68950383a" to-iid="9c852ccd820343589c2a52d4b0049cbc" />
+          </item>
+          <item id="36313539ec364f6aa526efedd41f6fab" iid="ccab62aa6d3848d3a4094a1b601b1ddd" creation-date="11/09/2025 00:47:38" order-index="3" type="entity">
+            <layout ax="11100.5" ay="7640.249" awidth="3449" aheight="1551" x="11100.5" y="7640.249" width="3449" height="1551" />
+          </item>
+          <item id="c3d7b20603fe402c93d8da6b6627f363" iid="c2be5dc322954627a2b2041fa20cf855" creation-date="11/09/2025 00:47:38" order-index="4" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="12832" y1="6322" x2="12828" y2="7640" start-border-pos="0.6252938162970106" end-border-pos="0.12518411416805597" name-position="0,20">
+              <points>
+                <point x="12832" y="6322" />
+                <point x="12828" y="7640" />
+              </points>
+            </layout>
+            <relation from="154b96ab424346a682c5d8e68950383a" from-iid="9c852ccd820343589c2a52d4b0049cbc" to="36313539ec364f6aa526efedd41f6fab" to-iid="ccab62aa6d3848d3a4094a1b601b1ddd" />
+          </item>
+          <item id="37dfa98f10c4426585bb515dbf27b21a" iid="abefca3ed7814704b520f7e14c15debc" creation-date="11/09/2025 00:48:15" order-index="5" type="entity">
+            <layout ax="11100.5" ay="10509.255" awidth="3449" aheight="1551" x="0" y="0" width="150" height="60" />
+          </item>
+          <item id="376a01ae18664f39a7ee93be21a1b3ef" iid="0ec101206a104b6e8659cd21b4e7328e" creation-date="11/09/2025 00:48:15" order-index="6" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="12825" y1="9191" x2="12825" y2="10509" start-border-pos="0.625" end-border-pos="0.125" name-position="0,20">
+              <points>
+                <point x="12825" y="9191" />
+                <point x="12825" y="10509" />
+              </points>
+            </layout>
+            <relation from="36313539ec364f6aa526efedd41f6fab" from-iid="ccab62aa6d3848d3a4094a1b601b1ddd" to="37dfa98f10c4426585bb515dbf27b21a" to-iid="abefca3ed7814704b520f7e14c15debc" />
+          </item>
+          <item id="e83c76b4f56b4c19bed7ff03da25d71e" iid="5e91a43ec86e4ec2b35573cf032ad66d" creation-date="11/09/2025 00:59:52" order-index="7" type="entity">
+            <layout ax="11100.5" ay="13378.255" awidth="3449" aheight="1551" x="0" y="0" width="150" height="60" />
+          </item>
+          <item id="b7c56c65cee6468e8f237220165aace6" iid="f6a21d5cf0e74effa318199b92c81204" creation-date="11/09/2025 00:59:52" order-index="8" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="12825" y1="12060" x2="12825" y2="13378" start-border-pos="0.625" end-border-pos="0.125" name-position="0,20">
+              <points>
+                <point x="12825" y="12060" />
+                <point x="12825" y="13378" />
+              </points>
+            </layout>
+            <relation from="37dfa98f10c4426585bb515dbf27b21a" from-iid="abefca3ed7814704b520f7e14c15debc" to="e83c76b4f56b4c19bed7ff03da25d71e" to-iid="5e91a43ec86e4ec2b35573cf032ad66d" />
+          </item>
+          <item id="0d56f55e04b74ab19f859bfd6b582168" iid="bdd83e7b6d8041e285b5503400061540" creation-date="11/09/2025 01:02:46" order-index="9" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="14280" y1="2060" x2="14550" y2="11282" start-border-pos="0.3621495327102804" end-border-pos="0.3744973945740651" start-local-pos="480" name-position="0,20">
+              <points>
+                <point x="14280" y="2060" />
+                <point x="23590.5" y="11264.5" />
+                <point x="14550" y="11282" />
+              </points>
+            </layout>
+            <relation from="916510733e904b73b2995e9836376522" from-iid="354b48413fe24886806691a66c40db16" to="37dfa98f10c4426585bb515dbf27b21a" to-iid="abefca3ed7814704b520f7e14c15debc" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
