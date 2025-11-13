@@ -1,10 +1,32 @@
 #include <iostream>
 using namespace std;
 
+void printArray(int arr[], int N){
+
+	cout << " The first element of the array: << " << arr[0] << endl;
+	cout << "[";
+	for(int i=0; i< N; i++){
+
+		if(N - i == 1)
+		{
+			cout << arr[i] << "]" << endl;
+			break;
+		}
+
+		cout << arr[i] << ",";
+	
+	}
+
+		cout << "*****finish print array*****" << endl;
 
 
 
-void mergeSort(int arr[],int low,int mid,int high,int data[]){
+}
+
+
+
+
+void mergeSort(int arr[],int low,int mid,int high){
 
 
 	int i = low;
@@ -12,9 +34,11 @@ void mergeSort(int arr[],int low,int mid,int high,int data[]){
 
 	int k = 0;
 
-	//int data[high - low + 1];
+	int data[high - low + 1];
 
 	while( i <= mid && j <= high){
+
+		//cout << "Enter the main while loop: " << endl;
 	
 		if(arr[i] <= arr[j]){
 			
@@ -30,7 +54,12 @@ void mergeSort(int arr[],int low,int mid,int high,int data[]){
 		++k;
 	}
 
-	if(i <= mid){
+	//cout << "End While loop" << endl;
+
+
+	if(k != 0){
+
+		//cout << "i while" << endl;
 
 		while(i<=mid){
 
@@ -38,9 +67,10 @@ void mergeSort(int arr[],int low,int mid,int high,int data[]){
 			++k;
 			++i;
 		}
-	}
+	
 
-	else if(j <= high){
+		//cout << "j while" << endl;
+	
 		while(j<=high){
 
 			data[k] = arr[j];
@@ -49,40 +79,49 @@ void mergeSort(int arr[],int low,int mid,int high,int data[]){
 		}
 	}
 
+	arr = data;
+
+	//cout << "End mergeSort function" << endl;
+	
+
 	
 }; 
 
 
-void merge(int arr[], int low, int high,int data[]){
+void merge(int arr[], int low, int high){
 
-	if(low < high){
+						cout << "==========================================================="<<endl;
 
-		int mid = high/2;
+	if(high > low){
+							printArray(arr,high - low + 1);
 
-		merge(arr,low,mid,data);
-		merge(arr,mid+1,high,data);
-		mergeSort(arr,low,mid,high,data);
+							cout << "low = " << low << ",high =  " << high << endl; 
+
+		int mid = ( (high + low) / 2 );// - 1 ;
+
+					cout << "mid = " << mid << endl;
+										int diff = high - low;
+										cout << "The difference is between low and high: " << high << " - " << low << endl;
+										printArray(arr,high - low+1);
+
+		merge(arr,low,mid);
+										printArray(arr,high - low+1);
+		cout << "finish merge 1 with mid = " << mid << endl;
+		//++mid;
+		//cout << "mid = " << mid << " so we need to go out" << endl;
+										printArray(arr,high - low+1);
+		//if(mid == 4) return;
+		merge(arr,mid+1,high);
+		//cout << "finish merge 2" << endl;
+		mergeSort(arr,low,mid,high);
+		printArray(arr,high - low+1);
+		cout << "finish mergeSort - main" << endl;
 	}
 };	
 
 
 
-void printArray(int arr[], int N){
-	cout << "[";
-	for(int i=0; i< N; i++){
 
-		if(N - i == 1)
-		{
-			cout << arr[i] << "]" << endl;
-			break;
-		}
-
-		cout << arr[i] << ",";
-	
-	}
-
-
-}
 		
 
 
@@ -96,15 +135,16 @@ int main()
 
 	int data[8];
 
-	cout << "Before Sorting: " << endl;
+	//cout << "Before Sorting: " << endl;
 
-	printArray(arr,8);
+	//printArray(arr,8);
 
-	merge(arr,0,7,data);
 
-	cout << "After Sorting: " << endl;
+	merge(arr,0,7);
 
-	printArray(data,8);
+	//cout << "After Sorting: " << endl;
+
+	//printArray(data,8);
 
 
         return 0;
