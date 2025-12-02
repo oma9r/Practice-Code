@@ -35,9 +35,6 @@ class ds{
 					++root->numberOfChildern;
 					childernArray[0]->numberOfChildern = 0;
 					insertVal(childernArray[0], ++s);                         ///node *nextNode, char *s
-					
-					
-	
 
 				}
 		
@@ -50,7 +47,7 @@ class ds{
 
 
 		void insertVal(node *nextNode, char *s){
-		
+			
 			if(s == '/0'){
 			
 				nextNode->val = '$';
@@ -61,6 +58,8 @@ class ds{
 				for(int i=0; i < newNode->numberOfChildern; ++i){
 
 					if(newNode->childernArray[i]->val == s){
+
+						
 
 						
 
