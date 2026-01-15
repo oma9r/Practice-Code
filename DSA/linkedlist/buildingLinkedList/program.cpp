@@ -69,25 +69,33 @@ class list{
 		};
 
 		void insertAt(int index,int value){
-							node *newNode = creatingNode(value);
+							if(index < 0 || index > size){
+											cout << "Invalid index\n";
+											return;			
+							}							
 
-							node *current = head;
-							
-							for(int i=0; i < size && current != NULL;i++){
+							if(index == 0){
+									insertAtHead(value);
+									return;
+							}
 
-								if(index == i){
-										node *post = current->next;
-										current->next = newNode;
-										newNode->next = post;
-										++size;
+							if(index == size){
+										insertAtTail(value);
 										return;
-								}
+							}
 
-								current = current->next;
+							node *newNode = creatingNode(value);
+							node *current = head;
+
+							for(int i =0; i < index - 1;i++){
+												current = current->next;
 
 							}
 
-							cout << "Could'nt adding this node, check the index value = " << index << endl;
+							newNode->next = current->next;
+							current->next = newNode;
+							++size;
+
 		};
 
 		void deleteFromHead(){
