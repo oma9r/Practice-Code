@@ -32,7 +32,7 @@ class queueA{
 							}
 
 							arr[end] = value;
-							++end;
+							end = (end+1) % sizeL;
 							++count;
 				}
 
@@ -41,7 +41,7 @@ class queueA{
 								cout << "The queue is empty, we can't pop anything" << endl;
 								return;
 						}
-						++begin;
+						begin = (begin + 1) % sizeL;
 						--count;
 				}
 
@@ -59,9 +59,14 @@ class queueA{
 				int size(){ return count; }
 
 
-				bool isFull(){ return (end == sizeL - 1); };
+				bool isFull(){ return (count == sizeL); };
 
-				bool isEmpty() { return (end == begin); };
+				bool isEmpty() { return (count == 0); };
+
+
+    				~queueA() {
+        					delete[] arr;
+    				}
 						
 				
 };
