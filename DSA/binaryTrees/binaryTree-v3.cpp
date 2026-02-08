@@ -271,7 +271,119 @@ class binaryTreeType{
 			}
 		}
 
-		//void deleteNode(int deleteItem);
+		void deleteNode(int deleteItem){
+
+			if(root == NULL) return;
+
+			else{
+				bool found = false;
+				binaryTreeNode *current;
+				binaryTreeNode *tCurrent;
+
+				current = root;
+
+				while(current != NULL){
+
+					tCurrent = current;
+
+					if(current->info == deleteItem){
+						found = true;
+						break;
+					}
+
+					else if(current->info > deleteItem) current = current->llink;
+
+					else current = current->rlink;
+				}
+
+
+				if(!found) return;
+
+
+				//case 1
+
+				if(current->llink == NULL && current->rlink == NULL){
+
+					
+					if(current->info < tCurrent->info){
+						
+						tCurrent->llink = NULL;
+						delete current;
+						current = NULL;
+
+					}
+
+					else if(current->info => tCurrent->info){
+												
+						tCurrent->rlink = NULL;
+						delete current;
+						current = NULL;
+					}
+				}
+
+
+				else if(current->llink == NULL || current->rlink == NULL){
+
+					binaryTreeNode *childNode;
+
+					if(current->llink != NULL){childNode = current->llink;}
+
+					else childNode = current->rlink;
+
+					
+					if(current->info < tCurrent->info){
+						
+						tCurrent->llink = childNode;
+						delete current;
+						current = NULL;
+
+					}
+
+					else if(current->info => tCurrent->info){
+												
+						tCurrent->rlink = childNode;
+						delete current;
+						current = NULL;
+					}
+
+
+
+				}
+
+				else if(current->llink != NULL && current->rlink != NULL){
+
+
+						tCurrent->rlink = current->rlink;
+						delete current;
+						current = NULL;
+
+
+				}
+				
+
+
+				
+				
+				
+				
+
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+		}
 
 
 };
