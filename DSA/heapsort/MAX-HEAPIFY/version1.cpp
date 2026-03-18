@@ -33,10 +33,11 @@ vector<int> heapify(vector <int> A){
 
 	for(int i = 0; i < A.size(); i++){
 
+		int left = 2 * i + 1; // + 2 with inital 1
+		int right = left + 1; // + 2 with inital 2
+		int parent = floor((i-1)/2); // with inital -1   +0.5
 
-		int left = 2 * i + 1;
-		int right = left + 1;
-		int parent = floor((i-1)/2);
+
 
 		if(left < A.size() && A[left] > A[i]){ swap(A[i],A[left]); }
 
@@ -89,9 +90,11 @@ int main()
 
 	//vector<int> arr = {10, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-	//vector<int> arr = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
+	vector<int> arr = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
 
-	vector<int> arr = readNumbersFromFile("numbers.txt");
+	//vector<int> arr = readNumbersFromFile("numbers.txt");
+
+
 
 	cout << "========================Input: " << endl;
 
@@ -101,8 +104,29 @@ int main()
 
 	cout << "========================Output: " << endl;
 
+
 	printArray(arr);
 
+	int i = 0;
+
+	while(i < 5){
+
+		cout << "Enter a new value to the heap:------> ";
+		int x;
+		cin >> x;
+
+		cout << "Before: " << endl;
+		printArray(arr);
+		arr.push_back(x);
+		cout << "When added the new element: " << endl;
+		printArray(arr);
+		arr = heapify(arr);
+
+		cout << "After " << endl;
+		printArray(arr);
+		++i;
+		cout << "================================================"<<endl;
+	}
         
 
 
