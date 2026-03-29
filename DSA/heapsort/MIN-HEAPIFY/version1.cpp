@@ -10,16 +10,24 @@ void minHeapify(vector<int> &A, int i) {
     int smallest = i;
 
     if (l < A.size() && A[l] < A[i]) {
+	//cout << "left: A[" << l <<"] = " << A[l] << endl;
+	//cout << "i: A[" << i <<"] = " << A[i] << endl;
+	//cout << "=========================" << endl;
         smallest = l;
     }
 
     if (r < A.size() && A[r] < A[smallest]) {
+	//cout <<"Right: A[" << r <<"] = " << A[r] << endl;
+	//cout << "Smallest: A[" << smallest <<"] = " << A[smallest] << endl;
+	//cout << "=========================" << endl;
         smallest = r;
     }
 
     if (smallest != i) {
-	//cout << "We fix in i =  " << i << endl;
         swap(A[smallest], A[i]);
+	//cout << "i: A[" << i <<"] = " << A[i] << endl;
+	//cout << "left: A[" << smallest <<"] = " << A[smallest] << endl;
+	//cout << "=========================" << endl;
         minHeapify(A, smallest);
     }
 }
@@ -32,18 +40,18 @@ void printArray(vector<int> &arr) {
 }
 
 int main() {
-    vector<int> A = {16,13,12,9,8,7,-1};
+    vector<int> A = {16,13,12,6,5,2,1};
 
-
+	cout << "before: " << endl;
 	    printArray(A);
 
-	for (int i=0; i < 3; i++){
+	for (int i=A.size()/2; i > -1; i--){
 
-	    cout << i << " - ";
+	    //cout << i << " - ";
 		cout << "==========================================================="<<endl;
 		//cout << "before: " << endl;
 
-	    minHeapify(A, 5);
+	    minHeapify(A, i);
 		cout << "after: " << endl;
     	    printArray(A);
 
