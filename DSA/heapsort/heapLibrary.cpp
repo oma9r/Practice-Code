@@ -1,0 +1,117 @@
+
+#include "../heapsort/heapLibrary.h"
+
+
+void maxHeapify(vector<int> &A, int i) {
+
+while(true){
+ 
+
+    int l = 2 * i + 1;
+    int r = 2 * i + 2;
+
+    int largest = i;
+
+    if (l < A.size() && A[l] > A[i]) {
+        largest = l;
+    }
+
+    if (r < A.size() && A[r] > A[largest]) {
+        largest = r;
+    }
+
+	if(largest == i) break;
+
+        swap(A[largest], A[i]);
+	i = largest;
+
+}
+
+
+};
+
+
+bool isMaxHeap(vector <int> &A){
+
+	for(int i = A.size()/2; i >= 0;i--){
+
+		int l = i * 2 + 1;
+		int r = i * 2 + 2;
+
+		if(l < A.size() && A[l] > A[i]) return false;
+		if(r < A.size() && A[r] > A[i]) return false;
+	}
+
+	return true;
+};
+
+void minHeapify(vector<int> &A, int i) {
+
+
+
+while(true){
+ 
+
+    int l = 2 * i + 1;
+    int r = 2 * i + 2;
+
+    int smallest = i;
+
+    if (l < A.size() && A[l] < A[i]) {
+        smallest = l;
+    }
+
+    if (r < A.size() && A[r] < A[smallest]) {
+        smallest = r;
+    }
+
+	if(smallest == i) break;
+
+        swap(A[smallest], A[i]);
+	i = smallest;
+
+}
+
+
+};
+
+bool isMinHeap(vector <int> &A){
+
+	for(int i = A.size()/2; i >= 0;i--){
+
+		int l = i * 2 + 1;
+		int r = i * 2 + 2;
+
+		if(l < A.size() && A[l] < A[i]) return false;
+		if(r < A.size() && A[r] < A[i]) return false;
+	}
+
+	return true;
+};
+
+
+void printArray(vector<int> &arr) {
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr[i] << ", ";
+    }
+    cout << endl;
+}
+
+void buildMaxHeap(vector <int>& A){
+
+	for(int i = A.size()/2; i>= 0;i--){
+
+		maxHeapify(A,i);
+	}
+
+}
+
+void buildMinHeap(vector <int>& A){
+
+	for(int i = A.size()/2; i>= 0;i--){
+
+		minHeapify(A,i);
+	}
+
+}
+

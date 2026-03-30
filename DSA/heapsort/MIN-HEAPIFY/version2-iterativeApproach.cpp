@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void maxHeapify(vector<int> &A, int i) {
+void minHeapify(vector<int> &A, int i) {
 
 
 
@@ -75,7 +75,7 @@ int main() {
 		//cout << "==========================================================="<<endl;
 		//cout << "before: " << endl;
 
-	    maxHeapify(A, i);
+	    minHeapify(A, i);
 		//cout << "after: " << endl;
     	    //printArray(A);
 

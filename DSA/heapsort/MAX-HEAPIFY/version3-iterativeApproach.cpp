@@ -55,7 +55,9 @@ bool isMaxHeap(vector <int> &A){
 }
 
 int main() {
-    vector<int> A = {16, 17, 18, 10, 9, 11, 20, 13, 15,-1,0,22,24,25,26};
+    //vector<int> A = {16, 17, 18, 10, 9, 11, 20, 13, 15,-1,0,22,24,25,26};
+	
+	vector <int> A = {5,3,17,10,84,19,6,22,9};
 
     //maxHeapify(A, 0);
     //printArray(A);
