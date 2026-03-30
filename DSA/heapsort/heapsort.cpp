@@ -14,11 +14,15 @@ void heapsort(vector<int> &A){
 	for(int i= A.size(); i > 0;i--){
 		swap(A[0],A[i]);
 		//--size;
+		vector <int> aa = A;
+		aa.pop_back();
 		maxHeapify(A,0);
 		printArray(A);
 		cout << "============================" << endl;
 	}
 }
+
+	// you need to pass to A which everytime the size of it will be less (like pop last element)
 
 bool isSorted(vector <int> &A){
 
