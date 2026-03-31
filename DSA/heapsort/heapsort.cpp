@@ -1,35 +1,26 @@
-#include "heapLibrary.h"
+#include "heapLibrary-v2.h"
 
 
 void heapsort(vector<int> &A){
 
 	buildMaxHeap(A);
 
-	//int size = A.size();
+	int size = A.size();
 
-	cout << "===============Before===============" << endl;
-	printArray(A);
-	
-			cout << "=============Start===============" << endl;
-	for(int i= A.size(); i > 0;i--){
+	for(int i= A.size()-1; i > 0;i--){
 		swap(A[0],A[i]);
-		//--size;
-		vector <int> aa = A;
-		aa.pop_back();
-		maxHeapify(A,0);
-		printArray(A);
-		cout << "============================" << endl;
+		--size;
+		maxHeapify(A,0,size);
 	}
 }
 
-	// you need to pass to A which everytime the size of it will be less (like pop last element)
+
 
 bool isSorted(vector <int> &A){
 
 	for(int i=1; i < A.size();i++){
 
-		if(A[i] > A[i-1]) return false;
-
+		if(A[i] < A[i-1]) return false;
 
 	}
 
@@ -43,15 +34,14 @@ int main(){
 
 	vector <int> A = {5,22,3,17,10,84,19,6,9};
 
-	//cout << "===============Before===============" << endl;
-	//printArray(A);
+	cout << "Before:";
+	printArray(A);
 
-	if(isSorted(A)) cout << "The list is sorted!" << endl;
-	else		cout << "The list is not sorted!" << endl;
+
 
 	heapsort(A);
 
-	cout << "===============After===============" << endl;
+	cout << "After: ";
 	printArray(A);
 
 
