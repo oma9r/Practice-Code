@@ -1,4 +1,3 @@
-
 #include "../heapsort/heapLibrary-v2.h"
 
 
@@ -113,5 +112,68 @@ void buildMinHeap(vector <int>& A){
 		minHeapify(A,i,A.size());
 	}
 
+}
+
+
+
+void heapsort(vector<int> &A){
+
+	buildMaxHeap(A);
+
+	int size = A.size();
+
+	for(int i= A.size()-1; i > 0;i--){
+		swap(A[0],A[i]);
+		--size;
+		maxHeapify(A,0,size);
+	}
+}
+
+
+
+bool isSorted(vector <int> &A){
+
+	for(int i=1; i < A.size();i++){
+
+		if(A[i] < A[i-1]) return false;
+
+	}
+
+	return true;
+}
+
+
+void heapsortMin(vector<int> &A){
+
+	buildMinHeap(A);
+
+	int size = A.size();
+
+	for(int i= A.size()-1; i > 0;i--){
+		swap(A[0],A[i]);
+		--size;
+		minHeapify(A,0,size);
+	}
+}
+
+
+
+bool isSortedDecresing(vector <int> &A){
+
+	for(int i=1; i < A.size();i++){
+
+		if(A[i] > A[i-1]) return false;
+
+	}
+
+	return true;
+}
+
+
+void printCheckSorted(bool sorted){
+
+	if(sorted){ cout << "Sorted!" << endl;}
+
+	else {cout << "Not Sorted!" << endl;}
 }
 

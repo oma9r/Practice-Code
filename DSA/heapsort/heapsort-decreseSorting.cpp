@@ -1,31 +1,6 @@
 #include "heapLibrary-v2.h"
 
 
-void heapsort(vector<int> &A){
-
-	buildMinHeap(A);
-
-	int size = A.size();
-
-	for(int i= A.size()-1; i > 0;i--){
-		swap(A[0],A[i]);
-		--size;
-		minHeapify(A,0,size);
-	}
-}
-
-
-
-bool isSortedDecresing(vector <int> &A){
-
-	for(int i=1; i < A.size();i++){
-
-		if(A[i] > A[i-1]) return false;
-
-	}
-
-	return true;
-}
 
 
 
@@ -39,7 +14,7 @@ int main(){
 
 
 
-	heapsort(A);
+	heapsortMin(A);
 
 	cout << "After: ";
 	printArray(A);
