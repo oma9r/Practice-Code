@@ -19,11 +19,37 @@ struct node{
 		right = NULL;
 		left = NULL;
 		}
+};
+
+void inorder(node *p){
+
+	if(p != NULL){
+		inorder(p->left);
+		cout << p->value << ", ";
+		inorder(p->right);
+	}
+}
+
+void postorder(node *p){
+
+	if(p != NULL){
+		postorder(p->left);
+		postorder(p->right);
+		cout << p->value << ", ";
+	}
+}
+
+void preorder(node *p){
+
+	if(p != NULL){
+		cout << p->value << ", ";
+		inorder(p->left);
+		inorder(p->right);
+	}
 }
 
 
-
-void isEmpty(node *p){return (p == NULL);};
+bool isEmpty(node *p){return (p == NULL);};
 
 bool search(node *p, int item){
 
@@ -38,41 +64,39 @@ bool search(node *p, int item){
 
 void insert(node *p, int item){
 
-	if(p != NULL){
-		if(p->value => item){insert(p->left,item);}
-		else if(p->value < item){insert(p->right,item);}
-	}
+	node *current;
+	node *trailCurrent;
+	node *newNode = new node(item);
+
+	if(p == NULL) p = newNode;
 
 	else{
-		p = new node(item);
-	}
+		current = p;
 
-};
+		while(current != NULL){
 
-void delete(node *p, int item){
-
-	if(search(p,item)){
-
-		if(p->value == item){
-
-			if(p->left == NULL && p->right == NULL){
-				p = NULL;
-				delete p;
+			trailCurrent = current;
+		
+			if(current->value == item){
+			
+				cerr << "The insert item is already in the list-";
+				cerr << "duplicates are not allowed. " << item << endl;
+				return;
 			}
 
-			else if(p->right
-		
+			else if(current->value > item) current = current->left;
+			
+			else current = current->right;			
+
 		}
 
+		if(trailCurrent->value > item) trailCurrent->left = newNode;
+	
+		else trailCurrent->right = newNode;
+
 	}
+};
 
-	else{
-		cout << "The item doesn't exit" << endl;
-
-	}
-
-
-}
 
 
 
@@ -87,7 +111,15 @@ void delete(node *p, int item){
 
 int main()
 {
-        
+	node *root = new node(31);
+	insert(root,42);
+	insert(root,25);
+	insert(root,29);
+	insert(root,20);
+
+	cout <<"inorder: ";inorder(root);cout << endl;
+        cout <<"preorder: ";preorder(root);cout << endl;
+	cout <<"postorder: ";postorder(root);cout << endl;
 
 
         
