@@ -51,15 +51,15 @@ void preorder(node *p){
 
 bool isEmpty(node *p){return (p == NULL);};
 
-bool search(node *p, int item){
+node *search(node *p, int item){
 
 	if(p != NULL){
 
-		if(p->value == item) return true; 
+		if(p->value == item) return p; 
 		else if(p->value > item) return search(p->left,item);
 		else return search(p->right,item);
 	}
-	return false;
+	return NULL;
 };
 
 void insert(node *p, int item){
@@ -96,6 +96,41 @@ void insert(node *p, int item){
 
 	}
 };
+
+void deleteNode(node *p,int item){
+
+	if(isEmpty(p)){ cout << "The tree is empty, you can't delete anything from it" << endl; return;};
+	
+	node *deleteNode = search(p,item);
+	if(deleteNode == NULL){cout << "The item is not exist" << endl; return;};
+
+	node *temp;
+
+	if(deleteNode->left == NULL && deleteNode->right == NULL){
+
+		temp = deleteNode;
+		deleteNode = NULL;
+		delete temp;		
+	}
+
+	else if(deleteNode->left == NULL){
+
+		temp = deleteNode;
+		deleteNode = temp->right;
+		delete temp;
+
+	} 
+
+	
+	
+
+	
+
+
+
+
+
+}
 
 
 
