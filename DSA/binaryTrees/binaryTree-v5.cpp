@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 struct node{
@@ -97,41 +98,105 @@ void insert(node *p, int item){
 	}
 };
 
-void deleteNode(node *p,int item){
+void deleteNode(node *p){
 
 	if(isEmpty(p)){ cout << "The tree is empty, you can't delete anything from it" << endl; return;};
 	
-	node *deleteNode = search(p,item);
-	if(deleteNode == NULL){cout << "The item is not exist" << endl; return;};
+	//node *dNode = search(p,item);
+	//if(dNode == NULL){cout << "The item is not exist" << endl; return;};
+
+	node *dNode = p;
 
 	node *temp;
 
-	if(deleteNode->left == NULL && deleteNode->right == NULL){
+	if(dNode->left == NULL && dNode->right == NULL){
 
-		temp = deleteNode;
-		deleteNode = NULL;
+		temp = dNode;
+		dNode = NULL;
 		delete temp;		
 	}
 
-	else if(deleteNode->left == NULL){
+	else if(dNode->left == NULL){
 
-		temp = deleteNode;
-		deleteNode = temp->right;
+		temp = dNode;
+		dNode = temp->right;
 		delete temp;
 
-	} 
-
+	}
 	
-	
+	else if(dNode->right == NULL){
 
-	
+		temp = dNode;
+		dNode = temp->left;
+		delete temp;
+	}
 
+	else {
+		node *current,*trailCurrent;
 
+		current = dNode->left;
+		trailCurrent = NULL;
 
+		while(current->right != NULL){
+
+			trailCurrent = current;
+			current = current->right;
+		}
+
+		dNode->value = current->value;
+
+		if(trailCurrent == NULL) dNode->left = current->left;
+
+		else trailCurrent->right = current->left;
+
+		delete current;
+	}//end else
+
+	cout << "Delettion is done!" << endl;
+
+}
+
+void deleteFromTree(node *p, int item){
+
+	if(isEmpty(p)){cout << "the tree is empty" << endl;return;}
+
+	if(!search(p,item)){cout << "delete from tree - the item is not exist" << endl;return;};
+
+	node *current;
+	node *trailCurrent;
+	bool found = false;
+
+	current = p;
+	trailCurrent = current;
+
+	while(current != NULL && !found){
+
+		if(current->value == item) found = true;
+
+		else{
+			trailCurrent = current;
+			
+			if(current->value > item) current = current->left;
+			
+			else current = current->right;
+		}
+	}
+
+	if(found){
+			if(current == p) deleteNode(p);
+			
+			else if(trailCurrent->value > item) deleteNode(trailCurrent->left);
+
+			else deleteNode(trailCurrent->right);
+	}
 
 
 }
 
+
+bool find(node *p, int item){
+	return (search(p,item) != NULL);
+}
 
 
 
@@ -146,11 +211,36 @@ void deleteNode(node *p,int item){
 
 int main()
 {
+	/*
 	node *root = new node(31);
 	insert(root,42);
 	insert(root,25);
+	if(find(root,25)) cout << "25 is exist!" << endl;
 	insert(root,29);
+	if(find(root,29)) cout << "29 is exist!" << endl;
 	insert(root,20);
+	deleteNode(root,29);
+	*/
+
+	node *root = new node(60);
+
+	vector<int> arr = {50,70,30,53,80,35,57,75,32,40,77,48,45};
+
+	for(int i =0; i < arr.size();i++){insert(root,arr[i]);};
+
+
+	if(find(root,57))cout << "we find 57!" << endl;
+
+	deleteFromTree(root,57);
+
+	if(find(root,57))cout << "we find 57!" << endl;
+
+
+	
+	if(!find(root,47))cout << "we didn't find 47!" << endl;
+
+
+	deleteFromTree(root,47);
 
 	cout <<"inorder: ";inorder(root);cout << endl;
         cout <<"preorder: ";preorder(root);cout << endl;
