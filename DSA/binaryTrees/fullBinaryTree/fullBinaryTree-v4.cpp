@@ -87,6 +87,70 @@ cout << endl;
 
 }
 
+void deleteNode(node *root, int value){
+
+	node *current = root;
+
+	if(root == NULL) return;
+
+	node *tCurrent = NULL;
+
+	while(current != NULL){
+
+		if(current->value == value)break;
+
+		else if(current->value > value){
+
+			tCurrent = current;
+			current = current->left;
+		}	
+
+		else if(current->value < value){
+
+			tCurrent = current;
+			current = current->right;
+		}	
+
+	}
+
+	if(current == NULL) return;
+
+	if(tCurrent->value > current->value){ ///left
+
+		if(current->right != NULL){
+
+			tCurrent->left = current->right;
+		}
+
+		else if(current->left != NULL){
+
+			tCurrent->left = current->left;
+		}
+		
+		else tCurrent->left = NULL;
+
+		delete current;
+	}
+
+	else if(tCurrent->value < current->value){ //right
+
+		if(current->right != NULL){
+
+			tCurrent->right = current->right;
+		}
+
+		else if(current->left != NULL){
+
+			tCurrent->right = current->left;
+		}
+		
+		else tCurrent->right = NULL;
+
+		delete current;
+	}
+
+}
+
 
 
 
@@ -95,22 +159,28 @@ cout << endl;
 
 int main()
 {
-        vector<int> A = {2,4,6,8,10,12};
+        //vector<int> A = {2,4,6,8,10,12};
 
-	node *root = new node(1);
+	vector<int> A = {55,98,33,60,80,102,10,41,56,65,79,85,100,120,7,21,39,40,58,59};
+
+	node *root = new node(76);
 
 	createFullBinaryTree(root,A);
 
 	orderByLevel(root);
 
-	insertNode(root,5);
+	//insertNode(root,5);
 
+	//orderByLevel(root);
+
+	//insertNode(root,7);
+
+	//orderByLevel(root);
+
+	deleteNode(root,33);
+
+	cout << endl << "after deletion: " << endl;
 	orderByLevel(root);
-
-	insertNode(root,7);
-
-	orderByLevel(root);
-
         
 
 
