@@ -98,7 +98,7 @@ void insert(node *p, int item){
 	}
 };
 
-void deleteNode(node *p){
+void deleteNode1(node *p){
 
 	if(isEmpty(p)){ cout << "The tree is empty, you can't delete anything from it" << endl; return;};
 	
@@ -156,7 +156,7 @@ void deleteNode(node *p){
 
 }
 
-void deleteFromTree(node *p, int item){
+void deleteFromTree1(node *p, int item){
 
 	if(isEmpty(p)){cout << "the tree is empty" << endl;return;}
 
@@ -183,11 +183,11 @@ void deleteFromTree(node *p, int item){
 	}
 
 	if(found){
-			if(current == p) deleteNode(p);
+			if(current == p) deleteNode1(p);
 			
-			else if(trailCurrent->value > item) deleteNode(trailCurrent->left);
+			else if(trailCurrent->value > item) deleteNode1(trailCurrent->left);
 
-			else deleteNode(trailCurrent->right);
+			else deleteNode1(trailCurrent->right);
 	}
 
 
@@ -197,6 +197,99 @@ void deleteFromTree(node *p, int item){
 bool find(node *p, int item){
 	return (search(p,item) != NULL);
 }
+
+void deleteNode(node * &p){
+
+	node *temp = p;
+
+	if(p->left == NULL && p->right == NULL){
+
+		p = NULL;
+		delete temp;	
+	}
+
+	else if(p->left == NULL){
+
+		p = p->right;
+		delete temp;		
+
+	}
+
+	else if(p->right == NULL){
+
+		p = p->left;
+		delete temp;
+
+	}
+
+	else {
+
+	
+		node *current = p->left;
+
+		while(current != NULL){
+
+			if(current->right == NULL){p->value = current->value; break;}
+
+			else{
+				current = current->right;
+
+			}
+		}
+		
+		delete current;
+
+	}
+}
+
+
+void deleteFromTree(node *root, int item){
+
+	if(root == NULL) cerr << "we can't delete from empty tree" << endl;
+
+	else {
+
+		node *current = root;
+
+		node *trailCurrent;
+
+		bool found = false;
+
+		while( current != NULL && !found){
+
+			trailCurrent = current;
+
+			if(current->value == item) found = true;
+
+			else if(current->value > item) current = current->left;
+
+			else current = current->right;
+
+		}
+
+		if(current == NULL) cerr << "sorry, something went wrong" << endl;
+
+		if(found){
+
+				if(current == root){deleteNode(root);}
+
+				else if(trailCurrent->value > item) deleteNode(trailCurrent->left);
+
+				else deleteNode(trailCurrent->right);
+
+		}
+
+		
+
+
+	}
+
+
+
+
+
+}
+
 
 
 
@@ -226,7 +319,12 @@ int main()
 
 	vector<int> arr = {50,70,30,53,80,35,57,75,32,40,77,48,45};
 
-	for(int i =0; i < arr.size();i++){insert(root,arr[i]);};
+	vector<int> A = {60,50,70,30,53,80,35,57,75,32,40,77,48};
+
+
+	for(int i =0; i < A.size();i++){insert(root,A[i]);};
+
+	inorder(root);
 
 
 	if(find(root,57))cout << "we find 57!" << endl;

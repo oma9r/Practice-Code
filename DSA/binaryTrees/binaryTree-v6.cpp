@@ -98,7 +98,7 @@ void insert(node *p, int item){
 	}
 };
 
-void deleteNode(node *p){
+void deleteNode(node * &p){
 
 	if(isEmpty(p)){ cout << "The tree is empty, you can't delete anything from it" << endl; return;};
 	
