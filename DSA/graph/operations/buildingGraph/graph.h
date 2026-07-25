@@ -29,7 +29,13 @@ class Graph{
 
         virtual int getNumberOfEdges() = 0;
 
+	bool isEmpty();
+
         void printGraph();
+
+	void getAdjacentVertices(int);
+
+	virtual int getDegree(int) = 0;
 
 };
 
@@ -47,6 +53,8 @@ class unGraph : public Graph{
 
 	void removeEdge(int u,int v) override;
 
+	int getDegree(int) override;
+
 };
 
 
@@ -62,6 +70,12 @@ class dGraph : public Graph{
         int getNumberOfEdges() override;
 
 	void removeEdge(int u,int v) override;
+
+	int getDegree(int) override;
+
+	int getInDegree(int);
+
+	int getOutDegree(int);
 
 };
 

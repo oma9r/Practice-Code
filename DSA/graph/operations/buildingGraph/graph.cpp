@@ -23,10 +23,10 @@ Graph::Graph(int vertices){
 
 void Graph::addVertex(){
 
-    V = V + 1;
+    ++V;
     this->Adj.resize(V);
-    int index = V-1;
-    this->Adj[index][0] = index;
+    this->Adj[V-1].resize(1);
+    this->Adj[V-1][0] = V-1;
 
 }
 
@@ -58,31 +58,43 @@ int Graph::getNumberOfVertices(){
 
 }
 
+bool Graph::isEmpty(){
+
+	return (this->getNumberOfEdges() == 0);
+
+}
+
 
 void Graph::printGraph(){
 
     for(int i = 0; i < this->V; i++){
 
-       // if(this->Adj[i].size() == 1) continue;
+       this->getAdjacentVertices(i);
+    }
 
-        for(int j = 0; j < this->Adj[i].size(); j++){
+}
 
-            if(j == this->Adj[i].size() - 1){
+void Graph::getAdjacentVertices(int u){
 
-                cout << this->Adj[i][j];
+
+	for(int j = 0; j < this->Adj[u].size(); j++){
+
+            if(j == this->Adj[u].size() - 1){
+
+                cout << this->Adj[u][j];
                 continue;
 
             }
 
-            cout << this->Adj[i][j] << " -> ";
+            cout << this->Adj[u][j] << " -> ";
 
         }
 
         cout << endl;
 
-    }
-
 }
+
+
 
 
 
@@ -170,6 +182,12 @@ void unGraph::removeEdge(int u, int v){
 
 }
 
+int unGraph::getDegree(int u){
+
+	return this->Adj[u].size();
+
+}
+
 
 
 //====================================================
@@ -186,7 +204,7 @@ void dGraph::addEdge(int u, int v){
 
     if(isConnected(u, v, tempIndex)){
 
-        cout << "they are already connected!";
+        cout << "they are already connected!"<<endl;
         return;
 
     }
@@ -229,5 +247,41 @@ void dGraph::removeEdge(int u, int v){
              << u << " and " << v << endl;
 
     }
+
+}
+
+
+
+int dGraph::getDegree(int u){
+
+	int degree = 0;
+
+	for(int i=0; i < this->Adj.size();i++){
+
+		for(int j = 1; j < this->Adj[i].size();j++){
+
+			if(Adj[i][j] == u) ++degree;
+		}
+	}
+
+	//cout << "Inner: the degree of " << u << " is: " << degree << endl;
+	//cout << "the size of u: " <<  Adj[u].size() << endl;
+
+	return degree + this->Adj[u].size()-1;
+
+}
+
+int dGraph::getInDegree(int u){
+
+
+	return this->getDegree(u) - getOutDegree(u);
+
+
+}
+
+int dGraph::getOutDegree(int u){
+
+	return this->Adj[u].size()-1;
+
 
 }
