@@ -44,13 +44,13 @@ int main(){
 	cout << "make some connected check: " << endl;
 
 
-    if(g.isConnected(0,1,tempIndex))
+    if(g.isAdjacent(0,1,tempIndex))
         cout<<"Connected! between 0 and 1"<<endl;
     else
         cout<<"Not Connected! between 0 and 1"<<endl;
 
 
-    if(g.isConnected(0,3,tempIndex))
+    if(g.isAdjacent(0,3,tempIndex))
         cout<<"Connected! between 0 and 3"<<endl;
     else
         cout<<"Not Connected! between 0 and 3"<<endl;
@@ -100,7 +100,7 @@ int main(){
 	cout << "================== " << endl;
 
 
-    if(g.isConnected(5,3,tempIndex))
+    if(g.isAdjacent(5,3,tempIndex))
         cout<<"Connected!"<<endl;
 
 
@@ -174,6 +174,17 @@ int main(){
 	cout << "The in degree of 5 is: " << dg.getInDegree(5) << endl;
 
 	cout << "The out degree of 5 is: " << dg.getOutDegree(5) << endl;
+
+
+	unGraph ug;
+
+	ug.addVertex();
+
+	ug.addVertex();
+
+	ug.addEdge(0,1);
+
+	ug.printGraph();
 
 
 

@@ -5,6 +5,13 @@
 //                  Graph
 //====================================================
 
+Graph::Graph(){
+
+	V = 0;
+	Adj.resize(0);
+	E = 0;
+}
+
 Graph::Graph(int vertices){
 
     V = vertices;
@@ -31,7 +38,7 @@ void Graph::addVertex(){
 }
 
 
-bool Graph::isConnected(int u, int v, int &index){
+bool Graph::isAdjacent(int u, int v, int &index){
 
     for(int i = 0; i < this->Adj[u].size(); i++){
 
@@ -94,6 +101,12 @@ void Graph::getAdjacentVertices(int u){
 
 }
 
+int Graph::getNumberOfEdges(){
+
+    return E;
+
+}
+
 
 
 
@@ -102,15 +115,40 @@ void Graph::getAdjacentVertices(int u){
 //                  unGraph
 //====================================================
 
+unGraph::unGraph(): Graph(){}
+
 unGraph::unGraph(int vertices)
     : Graph(vertices){}
 
 
 void unGraph::addEdge(int u, int v){
 
+	if(u >= this->Adj.size()){ 
+		cout << "Invalid edge adding" << endl;
+		return;
+	}
+
     int tempIndex = 0;
 
-    if(isConnected(u, v, tempIndex)){
+    if(isAdjacent(u, v, tempIndex)){
+
+        cout << "they are already connected!";
+
+    }
+
+    else{
+		
+        	this->Adj[u].push_back(v);
+
+    }
+
+	if(v >= this->Adj.size()){ 
+		cout << "Invalid edge adding" << endl;
+		return;
+	}
+
+
+    if(isAdjacent(v, u, tempIndex)){
 
         cout << "they are already connected!";
 
@@ -118,58 +156,37 @@ void unGraph::addEdge(int u, int v){
 
     else{
 
-        this->Adj[u].push_back(v);
+		this->Adj[v].push_back(u);
+
 
     }
-
-
-    if(isConnected(v, u, tempIndex)){
-
-        cout << "they are already connected!";
-
-    }
-
-    else{
-
-        this->Adj[v].push_back(u);
-
-    }
+		++E;
 
 }
 
 
-int unGraph::getNumberOfEdges(){
 
-    if(E > 0)
-        return E;
-
-    this->E = 0;
-
-    int tempIndex = 0;
-
-    for(int i = 0; i < this->Adj.size(); i++){
-
-        for(int j = 0; j < this->Adj[i].size(); j++){
-
-            if(!isConnected(i, j, tempIndex) || !isConnected(j, i, tempIndex))
-                E += 1;
-
-        }
-
-    }
-
-    return E;
-
-}
 
 void unGraph::removeEdge(int u, int v){
 
     int index = 0;
 
-    if(this->isConnected(u, v, index)){
+	if(u >= this->Adj.size()){
+		cout << "invalid input delete edge" << endl;
+		return;
+	}
+
+	if(v >= this->Adj.size()){
+		cout << "invalid input delete edge" << endl;
+		return;
+	}
+
+
+    if(this->isAdjacent(u, v, index)){
 
         this->Adj[u].erase(Adj[u].begin() + index);
 	this->Adj[v].erase(Adj[v].begin() + index);
+	--E;
 
     }
 
@@ -184,7 +201,7 @@ void unGraph::removeEdge(int u, int v){
 
 int unGraph::getDegree(int u){
 
-	return this->Adj[u].size();
+	return this->Adj[u].size()-1;
 
 }
 
@@ -194,50 +211,50 @@ int unGraph::getDegree(int u){
 //                  dGraph
 //====================================================
 
+dGraph::dGraph() : Graph(){}
+
 dGraph::dGraph(int vertices)
     : Graph(vertices){}
 
 
 void dGraph::addEdge(int u, int v){
 
+	//if(u >= this->Adj.size()){ 
+		//cout << "Invalid edge adding" << endl;
+		//return;
+	//}
+
+	//if(v >= this->Adj[u].size()){
+		//cout << "Invalid edge adding" << endl;
+		//return;
+	//}
+
     int tempIndex = 0;
 
-    if(isConnected(u, v, tempIndex)){
+    if(isAdjacent(u, v, tempIndex)){
 
         cout << "they are already connected!"<<endl;
         return;
 
     }
 
-    Adj[u].push_back(v);
+	else
+
+   			Adj[u].push_back(v);
+			++E;
 
 }
 
 
-int dGraph::getNumberOfEdges(){
-
-    if(E > 0)
-        return E;
-
-    this->E = 0;
-
-    for(int i = 0; i < this->Adj.size(); i++){
-
-        E += Adj[i].size() - 1;
-
-    }
-
-    return E;
-
-}
 
 void dGraph::removeEdge(int u, int v){
 
     int index = 0;
 
-    if(this->isConnected(u, v, index)){
+    if(this->isAdjacent(u, v, index)){
 
         this->Adj[u].erase(Adj[u].begin() + index);
+	--E;
 
     }
 
@@ -267,7 +284,7 @@ int dGraph::getDegree(int u){
 	//cout << "Inner: the degree of " << u << " is: " << degree << endl;
 	//cout << "the size of u: " <<  Adj[u].size() << endl;
 
-	return degree + this->Adj[u].size()-1;
+	return degree + this->Adj[u].size()-2;
 
 }
 

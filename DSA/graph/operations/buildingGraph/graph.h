@@ -15,19 +15,21 @@ class Graph{
         int E;
         vector<vector<int>> Adj;
 
+	Graph();
+
         Graph(int vertices);
 
         virtual void addEdge(int u,int v) = 0;
 
         void addVertex();
 
-        bool isConnected(int u,int v,int &index);
+        bool isAdjacent(int u,int v,int &index);
 
         virtual void removeEdge(int u,int v) = 0;
 
         int getNumberOfVertices();
 
-        virtual int getNumberOfEdges() = 0;
+        int getNumberOfEdges();
 
 	bool isEmpty();
 
@@ -45,11 +47,11 @@ class unGraph : public Graph{
 
     public:
 
+	unGraph();
+
         unGraph(int vertices);
 
         void addEdge(int u,int v) override;
-
-        int getNumberOfEdges() override;
 
 	void removeEdge(int u,int v) override;
 
@@ -63,11 +65,11 @@ class dGraph : public Graph{
 
     public:
 
+	dGraph();
+
         dGraph(int vertices);
 
         void addEdge(int u,int v) override;
-
-        int getNumberOfEdges() override;
 
 	void removeEdge(int u,int v) override;
 
