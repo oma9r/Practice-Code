@@ -6,6 +6,7 @@ set CPLUS_INCLUDE_PATH=C:\Users\user\OneDrive\Desktop\practice\DSA\graph\operati
 class bfsGraph : public unGraph{
 
 	public:
+		int value;
 		string color;
 		int distance;
 		int parent;	
