@@ -13,9 +13,9 @@ Graph::Graph(){
 	E = 0;
 }
 
-Graph::Graph(int vertices){
+Graph::Graph(int vertices1){
 
-    V = vertices;
+    V = vertices1;
     Adj.resize(V);
     vertices.resize(V);
     E = 0;
@@ -24,9 +24,9 @@ Graph::Graph(int vertices){
 
         Adj[i].resize(1);
         Adj[i][0] = i;
-	vertices[i]->value = i;
-	vertices[i]->parent = -1;
-	vertices[i]->color = 0; // 0 white, 1 gray, 2 black.
+	vertices[i].value = i;
+	vertices[i].parent = -1;
+	vertices[i].color = 0; // 0 white, 1 gray, 2 black.
 	
 
     }
@@ -43,9 +43,9 @@ void Graph::addVertex(){
 
 
     this->vertices.resize(V);
-    this->vertices[V-1]->value = V-1;
-    this->vertices[V-1]->parent = -1;
-    this->vertices[V-1]->color = 0;
+    this->vertices[V-1].value = V-1;
+    this->vertices[V-1].parent = -1;
+    this->vertices[V-1].color = 0;
 
 
 }
@@ -120,16 +120,16 @@ int Graph::getNumberOfEdges(){
 
 }
 
-void printEachVertex(){
+void Graph::printEachVertex(){
 
 	cout << "The details of each vertex contains: " << endl;
 	cout << "V->value: " << endl << "V->parent: " << endl;
 	cout << "V->color: " << endl; 
 	for(int i=0; i < this->V; i++){
 
-		cout << i <<"->value: " << this->vertices[i]->value; <<  endl << "V->parent: "<< this->vertices[i]->parent; << endl;
-		cout << "V->color: " << endl; 		
-
+		//cout << i <<"->value: " << this->vertices[i].value <<  endl << 
+		// i <<"->parent: "<< this->vertices[i].parent << endl;
+		cout << i <<"->color: " << this->vertices[i].color << endl; 		
 
 
 	}
