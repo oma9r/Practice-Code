@@ -1,43 +1,56 @@
 #include "graph.h"
 #include <queue>
 
+const int WHITE = 0;
+const int GRAY = 1;
+const int BLACK = 2;
+
 
 void BFS(Graph &g, int start){
+
+	bool check = false;
+	for(int i=0; i < g.vertices.size();i++){
+		
+		if(start == g.vertices[i].value){ check = true; break; }
+
+	}
+
+	if(!check){ cout << "the start value is in valid" << endl; return; }
 
 	for(int i=0; i < g.vertices.size();i++){
 
 		g.vertices[i].parent = -1;
-		g.vertices[i].color = 0;   /// 0 white
+		g.vertices[i].color = WHITE;   /// 0 white
 	}
 
-	g.vertices[start].color = 1;
+	g.vertices[start].color = GRAY;
 	g.vertices[start].distance = 0;
 	
-	queue <Vertex> q;
+	queue <int> q;
 
-	q.push(g.vertices[start]);
+	q.push(g.vertices[start].value);
 
-	Vertex current;
+	int current;
 
 	while(!q.empty()){
 
 		current = q.front();
 		q.pop();
 
-			for(int j=1; j < g.Adj[current.value].size();j++){
+			for(int j=1; j < g.Adj[current].size();j++){
 
-				if(g.vertices[g.Adj[current.value][j]].color == 0){
-					g.vertices[g.Adj[current.value][j]].color = 1; // gray
-					++g.vertices[g.Adj[current.value][j]].distance;
-					g.vertices[g.Adj[current.value][j]].parent = current.value;
-					q.push(g.vertices[g.Adj[current.value][j]]);
+				if(g.vertices[g.Adj[current][j]].color == WHITE){
+					g.vertices[g.Adj[current][j]].color = GRAY; // gray
+					g.vertices[g.Adj[current][j]].distance = g.vertices[current].distance + 1;
+					g.vertices[g.Adj[current][j]].parent = current;
+					q.push(g.vertices[g.Adj[current][j]].value);
 				}
 				
 
 			}
 		
-		//cout << vertices[current->value]->value << " visited!" << endl;
-		g.vertices[current.value].color = 2;
+
+		g.vertices[current].color = BLACK;
 
 	}
 

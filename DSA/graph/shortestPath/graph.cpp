@@ -1,5 +1,9 @@
 #include "graph.h"
 
+const int WHITE = 0;
+const int GRAY = 1;
+const int BLACK = 2;
+
 
 //====================================================
 //                  Graph
@@ -26,7 +30,11 @@ Graph::Graph(int vertices1){
         Adj[i][0] = i;
 	vertices[i].value = i;
 	vertices[i].parent = -1;
-	vertices[i].color = 0; // 0 white, 1 gray, 2 black.
+	vertices[i].color = WHITE; // 0 white, 1 gray, 2 black.
+	vertices[i].distance = 0;
+	vertices[i].dTime = 0;
+	vertices[i].fTime = 0;
+	
 	
 
     }
@@ -45,7 +53,7 @@ void Graph::addVertex(){
     this->vertices.resize(V);
     this->vertices[V-1].value = V-1;
     this->vertices[V-1].parent = -1;
-    this->vertices[V-1].color = 0;
+    this->vertices[V-1].color = WHITE;
 
 
 }
@@ -215,7 +223,13 @@ void unGraph::removeEdge(int u, int v){
 
     if(this->isAdjacent(u, v, index)){
 
-        this->Adj[u].erase(Adj[u].begin() + index);
+	this->Adj[v].erase(Adj[v].begin() + index);
+	--E;
+
+    }
+
+    else if(this->isAdjacent(v, u, index)){
+
 	this->Adj[v].erase(Adj[v].begin() + index);
 	--E;
 
