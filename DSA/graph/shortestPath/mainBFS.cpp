@@ -62,7 +62,7 @@ void BFS(Graph &g, int start){
 
 int main()
 {
-	unGraph ug(13);
+	unGraph ug(16);
 
 	ug.addEdge(1,2);
 	ug.addEdge(1,12);
@@ -83,10 +83,21 @@ int main()
 	ug.addEdge(10,8);
 
 	
+	
+
 	BFS(ug,1);
 
 	ug.printEachVertex();
 	
+	ug.removeEdge(12,4);
 
+	ug.removeEdge(9,5);
+
+	cout << "line 1: check remove function: "; ug.removeEdge(-1,2);
+
+	BFS(ug,1);
+
+	ug.printEachVertex();
+	
         return 0;
 }

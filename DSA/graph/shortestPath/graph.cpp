@@ -135,9 +135,12 @@ void Graph::printEachVertex(){
 	cout << "V->color: " << endl; 
 	for(int i=0; i < this->V; i++){
 
-		//cout << i <<"->value: " << this->vertices[i].value <<  endl << 
-		// i <<"->parent: "<< this->vertices[i].parent << endl;
-		cout << i <<"->color: " << this->vertices[i].color << endl; 		
+		cout << i <<"->value: " << this->vertices[i].value <<  endl << 
+		i <<"->parent: "<< this->vertices[i].parent << endl;
+		cout << i <<"->color: " << this->vertices[i].color << endl; 
+		cout << i << "->distance: " << this->vertices[i].distance << endl;
+		
+		cout << "====================" << endl;		
 
 
 	}
@@ -162,10 +165,17 @@ unGraph::unGraph(int vertices)
 
 void unGraph::addEdge(int u, int v){
 
-	if(u >= this->Adj.size()){ 
+	if(u >= this->Adj.size() || u < 0){ 
 		cout << "Invalid edge adding" << endl;
 		return;
 	}
+
+	if(v >= this->Adj.size() || v < 0){ 
+		cout << "Invalid edge adding" << endl;
+		return;
+	}
+
+	
 
     int tempIndex = 0;
 
@@ -178,73 +188,63 @@ void unGraph::addEdge(int u, int v){
     else{
 		
         	this->Adj[u].push_back(v);
-
-    }
-
-	if(v >= this->Adj.size()){ 
-		cout << "Invalid edge adding" << endl;
-		return;
-	}
-
-
-    if(isAdjacent(v, u, tempIndex)){
-
-        cout << "they are already connected!";
-
-    }
-
-    else{
-
 		this->Adj[v].push_back(u);
-
-
-    }
 		++E;
+    }
+
+	
+
+
+    
 
 }
 
 
 
 
-void unGraph::removeEdge(int u, int v){
-
-    int index = 0;
-
-	if(u >= this->Adj.size()){
-		cout << "invalid input delete edge" << endl;
-		return;
-	}
-
-	if(v >= this->Adj.size()){
-		cout << "invalid input delete edge" << endl;
-		return;
-	}
+void unGraph::removeEdge(int u, int v)
+{
+    int indexU = 0;
+    int indexV = 0;
 
 
-    if(this->isAdjacent(u, v, index)){
-
-	this->Adj[v].erase(Adj[v].begin() + index);
-	--E;
-
+    // Check valid vertices
+    if(u >= this->Adj.size() || u < 0 ||
+       v >= this->Adj.size() || v < 0)
+    {
+        cout << "Invalid input delete edge" << endl;
+        return;
     }
 
-    else if(this->isAdjacent(v, u, index)){
 
-	this->Adj[v].erase(Adj[v].begin() + index);
-	--E;
+    // Check that both directions exist
+    bool edgeUV = this->isAdjacent(u, v, indexU);
+    bool edgeVU = this->isAdjacent(v, u, indexV);
 
+
+    if(edgeUV && edgeVU)
+    {
+        // Remove v from Adj[u]
+        this->Adj[u].erase(this->Adj[u].begin() + indexU);
+
+
+        // Remove u from Adj[v]
+        this->Adj[v].erase(this->Adj[v].begin() + indexV);
+
+
+        // One undirected edge removed
+        --E;
     }
-
-    else{
-
-        cout << "there's no connection between "
+    else
+    {
+        cout << "There is no connection between "
              << u << " and " << v << endl;
-
     }
-
 }
 
 int unGraph::getDegree(int u){
+
+	if(u >= this->Adj.size() || u < 0) return -1;
 
 	return this->Adj[u].size()-1;
 
