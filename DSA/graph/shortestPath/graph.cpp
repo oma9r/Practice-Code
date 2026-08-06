@@ -55,13 +55,17 @@ void Graph::addVertex(){
     this->vertices[V-1].parent = -1;
     this->vertices[V-1].color = WHITE;
 
+    this->vertices[V-1].distance = 0;
+    this->vertices[V-1].dTime = 0; 
+    this->vertices[V-1].fTime = 0;
+
 
 }
 
 
 bool Graph::isAdjacent(int u, int v, int &index){
 
-    for(int i = 0; i < this->Adj[u].size(); i++){
+    for(int i = 1; i < this->Adj[u].size(); i++){
 
         if(Adj[u][i] == v){
 
@@ -139,6 +143,9 @@ void Graph::printEachVertex(){
 		i <<"->parent: "<< this->vertices[i].parent << endl;
 		cout << i <<"->color: " << this->vertices[i].color << endl; 
 		cout << i << "->distance: " << this->vertices[i].distance << endl;
+
+		cout << i << "->dTime: " << this->vertices[i].dTime << endl;
+		cout << i << "->fTime: " << this->vertices[i].fTime << endl;
 		
 		cout << "====================" << endl;		
 
