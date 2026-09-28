@@ -1,0 +1,23 @@
+insert into membership (student_id,club_id,role,join_year) values 
+
+			(15,1,'Vice President',2019),
+			(1,1,'President',2023),
+			(16,1,'Treasurer',2020),
+			(22,1,'Member',2021),
+			(27,1,'Member',2021),
+			(27,2,'Member',2021),
+			(22,2,'Member',2021),
+			(16,2,'Member',2019),
+			(2,2,'President',2025),
+			(6,2,'Vice President',2022),
+			(8,2,'Treasurer',2022),
+			(9,3,'President',2022),
+			(27,3,'Vice President',2021),
+			(18,3,'Treasurer',2022),
+			(19,4,'President',2022),
+			(20,4,'Vice President',2022),
+			(4,4,'Memeber',2024),
+			(5,5,'President',2022),
+			(7,5,'Treasurer',2018),
+			(27,6,'President',2020),
+			(34,6,'Memeber',2024);
